@@ -15,3 +15,7 @@ An unofficial client library for the `BeSnappy`_ HTTP API.
 
 Issues can be filed in the GitHub issue tracker. Please don't use the issue
 tracker for general support queries.
+
+Note: API coverage is currently extremely low.
+
+
