@@ -37,7 +37,7 @@ class SnappyApiSender(object):
         auth = (self.api_key, "x")
         if method is "POST":
             data = json.dumps(py_data)
-            r = requests.post(
+            r = self.session.post(
                 url, auth=auth, data=data, headers=headers, verify=False)
         elif method is "GET":
             if py_data is not None:
@@ -50,6 +50,21 @@ class SnappyApiSender(object):
         # return whole response because some calls are just single text
         # response not json
         return r
+
+    def get_accounts(self):
+        """
+        List accounts available.
+        """
+        response = self._api_request('GET', 'accounts')
+        return json.loads(response.text)
+
+    def get_mailboxes(self, account_id):
+        """
+        List mailboxes in account.
+        """
+        response = self._api_request(
+            'GET', 'account/%s/mailboxes' % (account_id,))
+        return json.loads(response.text)
 
     def note(self, mailbox_id, subject, message, to_addr=None, from_addr=None,
              **kwargs):
