@@ -1,1 +1,82 @@
-{"http_interactions": [{"request": {"body": {"string": "{\"mailbox_id\": 3642, \"from\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"message\": \"Are all experiment protocols being followed?\", \"subject\": \"Test subject 547d2ef1-8b9e-4714-b2a8-a60eca69e400\"}", "encoding": "utf-8"}, "headers": {"Content-Length": ["212"], "Accept-Encoding": ["gzip, deflate"], "Accept": ["*/*"], "User-Agent": ["python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"], "Connection": ["keep-alive"], "content-type": ["application/json; charset=utf-8"], "Authorization": ["Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"]}, "method": "POST", "uri": "https://app.besnappy.com/api/v1/note"}, "response": {"body": {"base64_string": "H4sIAAAAAAAAAyvOyckuKyqpKKjKTTbMNLUAAOZKPoAQAAAA", "encoding": "UTF-8"}, "headers": {"x-powered-by": ["PHP/5.6.0-1+deb.sury.org~trusty+1"], "transfer-encoding": ["chunked"], "set-cookie": ["snappy_session=eyJpdiI6IldjQVY2UFNDSWRHc2xXWHRLdFFMb0J3MHhVWkRiS0RWdmppbzY1aDQ1M2M9IiwidmFsdWUiOiJGaHh3WGc4bmdQQ0FldUQwbGFRTlRlN3I1NFlVY1AyNVh2RFwvZDFWVnlYeWUxbkE3QkFkOWpST0ExZEFSXC9OeWpPWnlpZ0Rhb0N2XC9JUTF6clVucTRxUT09IiwibWFjIjoiMTA3NDNhNTRiYTAxZjgwYjNkNGJiMjM2ZTFhM2ZiZjQzZjlmZGUyMTZkMGVjZWM1MTVkYWZiYTVjODY2OWNiYSJ9; expires=Thu, 18-Sep-2014 22:16:10 GMT; Max-Age=7200; path=/; httponly"], "content-encoding": ["gzip"], "server": ["nginx/1.6.0"], "connection": ["keep-alive"], "cache-control": ["no-cache"], "date": ["Thu, 18 Sep 2014 20:16:10 GMT"], "x-frame-options": ["SAMEORIGIN"], "content-type": ["text/html; charset=UTF-8"]}, "status": {"message": "OK", "code": 200}, "url": "https://app.besnappy.com/api/v1/note"}, "recorded_at": "2014-09-18T20:16:10"}], "recorded_with": "betamax/0.4.0"}
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2014-09-18T21:01:28",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"mailbox_id\": 3642, \"from\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"message\": \"Are all experiment protocols being followed?\", \"subject\": \"Test subject 294bc6f6-d2fd-4111-bd96-486e33117614\"}"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Length": [
+            "212"
+          ],
+          "User-Agent": [
+            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ]
+        },
+        "method": "POST",
+        "uri": "https://app.besnappy.com/api/v1/note"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAAAAAAAAA8s3KK3IMSlKzMhKz6osKywCAFXwHDEQAAAA",
+          "encoding": "UTF-8"
+        },
+        "headers": {
+          "cache-control": [
+            "no-cache"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "content-encoding": [
+            "gzip"
+          ],
+          "content-type": [
+            "text/html; charset=UTF-8"
+          ],
+          "date": [
+            "Thu, 18 Sep 2014 21:01:28 GMT"
+          ],
+          "server": [
+            "nginx/1.6.0"
+          ],
+          "set-cookie": [
+            "snappy_session=eyJpdiI6IlNyS0pDYUpycUNxb2VSaFA1a2NRWmFVTE91N01NZkIwWU1PS2VjU2N4VUU9IiwidmFsdWUiOiJ3c2ZFaHRlWUZoYkJZZ3dSOFd3ZnNFSVBUdEdzYWZzSDRMbTJRR05rMktNRE9vakNCNXRrYUZObjlQclFaMWJzdVd1YXpna0ZXaFwvNUc2YnR0M1FVZXc9PSIsIm1hYyI6IjEyNjdjMTNlNDM3NDA0OTYwZTYxOTIyZGIxM2Q2OTgwODA3MmQzOGU0MzA0ZWM4ZDNkMTM1YTljNjQ5MjhlZDAifQ%3D%3D; expires=Thu, 18-Sep-2014 23:01:28 GMT; Max-Age=7200; path=/; httponly"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-powered-by": [
+            "PHP/5.6.0-1+deb.sury.org~trusty+1"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/note"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.4.0"
+}

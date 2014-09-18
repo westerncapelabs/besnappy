@@ -2,11 +2,13 @@
 Tests for besnappy.tickets.
 """
 
+import json
 import os
 from unittest import TestCase
 import uuid
 
 from betamax import Betamax
+from betamax.serializers import JSONSerializer
 from requests import Session
 from requests_testadapter import TestSession, TestAdapter
 
@@ -15,6 +17,17 @@ from besnappy.tickets import SnappyApiSender
 
 CASSETTE_LIBRARY_DIR = os.path.join(os.path.dirname(__file__), "cassettes")
 BESNAPPY_TEST_API_KEY = os.environ.get("BESNAPPY_TEST_API_KEY")
+
+
+class PrettyJSONSerializer(JSONSerializer):
+    name = 'prettyjson'
+
+    def serialize(self, cassette_data):
+        return json.dumps(
+            cassette_data, sort_keys=True, indent=2, separators=(',', ': '))
+
+
+Betamax.register_serializer(PrettyJSONSerializer)
 
 
 class TestSnappyApiSender(TestCase):
@@ -54,7 +67,8 @@ class TestSnappyApiSender(TestCase):
         """
         Build a ``SnappyApiSender`` instance using the test session.
         """
-        self.betamax.use_cassette(self.id(), record=self.betamax_record)
+        self.betamax.use_cassette(
+            self.id(), record=self.betamax_record, serialize_with="prettyjson")
         self.betamax.start()
         return self.snappy_for_session(self.betamax_session, api_key, api_url)
 
@@ -66,7 +80,8 @@ class TestSnappyApiSender(TestCase):
         set up the environment for the test to use rather than being part of
         the test logic.
         """
-        self.betamax_common.use_cassette("common", record=self.betamax_record)
+        self.betamax_common.use_cassette(
+            "common", record=self.betamax_record, serialize_with="prettyjson")
         self.betamax_common.start()
         return self.snappy_for_session(self.common_session, api_key, api_url)
 

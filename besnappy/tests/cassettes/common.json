@@ -1,1 +1,218 @@
-{"http_interactions": [{"request": {"body": {"string": "", "encoding": "utf-8"}, "headers": {"Accept-Encoding": ["gzip, deflate"], "Accept": ["*/*"], "User-Agent": ["python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"], "Connection": ["keep-alive"], "content-type": ["application/json; charset=utf-8"], "Authorization": ["Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"]}, "method": "GET", "uri": "https://app.besnappy.example.com/api/v1/account/3249/mailboxes"}, "response": {"body": {"string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]", "encoding": null}, "headers": {"x-powered-by": ["PHP/5.6.0-1+deb.sury.org~trusty+1"], "transfer-encoding": ["chunked"], "set-cookie": ["snappy_session=eyJpdiI6IjJmYTZWa3RBS2UrYVJvbjBKdHI3dFJQV1M3ckVzMnQ4UVdla3Zlb2hrVVk9IiwidmFsdWUiOiI1ZER3YjRaZGpUSWNMblJUTEo2NVgxN2JCTVJcL1wvVWhNQ0hDVFpZbHRSbEtIaE1FMUxoaHIyaXljQm4yT1wvYjhGcE5hQTl2Zm1TandVUGJzQjErRzk0dz09IiwibWFjIjoiYzNhZTZjYTg5ZjBmMDZlOTgwNjlmNGU4MWE2ODU0OWVjNDY0OTQzMTFhYzlhOTg4NzNmZTZmYWZmN2MxYTNkZSJ9; expires=Thu, 18-Sep-2014 18:10:21 GMT; Max-Age=7200; path=/; httponly"], "server": ["nginx/1.6.0"], "connection": ["keep-alive"], "cache-control": ["no-cache"], "date": ["Thu, 18 Sep 2014 16:10:21 GMT"], "x-frame-options": ["SAMEORIGIN"], "content-type": ["application/json"]}, "status": {"message": "OK", "code": 200}, "url": "https://app.besnappy.example.com/api/v1/account/3249/mailboxes"}, "recorded_at": "2014-09-18T16:10:21"}, {"request": {"body": {"string": "", "encoding": "utf-8"}, "headers": {"Accept-Encoding": ["gzip, deflate"], "Accept": ["*/*"], "User-Agent": ["python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"], "Connection": ["keep-alive"], "content-type": ["application/json; charset=utf-8"], "Authorization": ["Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"]}, "method": "GET", "uri": "https://app.besnappy.com/api/v1/accounts"}, "response": {"body": {"string": "[{\"id\":3249,\"organization\":\"Western Cape Labs (Test)\",\"domain\":\"wcldemo.besnappy.com\",\"plan_id\":3,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 14:19:37\",\"custom_domain\":null,\"trial_ends_at\":\"2014-09-30 13:49:36\",\"cancel_message\":null,\"forward_shown\":1,\"badge_url\":\"\",\"last_paid_at\":null,\"invoiced\":null,\"cancelled_at\":null,\"pivot\":{\"staff_id\":3696,\"account_id\":3249,\"username\":\"jeremy\",\"owner\":0,\"admin\":0,\"last_wall_visit\":\"2014-09-18 10:41:15\",\"default_lens\":null,\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"is_paid\":true,\"is_trial\":true}]", "encoding": null}, "headers": {"x-powered-by": ["PHP/5.6.0-1+deb.sury.org~trusty+1"], "transfer-encoding": ["chunked"], "set-cookie": ["snappy_session=eyJpdiI6IkNlQlAzSW5qeTUrYjhyaVhLRncxZ1lOWXJlNkdyd21zRWxsQ04xRXZIMW89IiwidmFsdWUiOiJrd0dlZlhRVVdLQjFqWVp3Q1dyMFwvWXhMdUxGUWdqRm5IaUhQWlNFa3NkN3VLdVFoWE5URkVMQTQwN3RjeGlJQWk2NlFkQ1EycEZXblNITTFROG1ueFE9PSIsIm1hYyI6IjgyYWEyY2I2MGUyNzliOTM0NTVkZjM3MDU5M2UzOTg3OWUwNThlZGI2OTNmMzBhNTlhNWFiZDI0NmJlNjIxZDAifQ%3D%3D; expires=Thu, 18-Sep-2014 22:16:06 GMT; Max-Age=7200; path=/; httponly"], "server": ["nginx/1.6.0"], "connection": ["keep-alive"], "cache-control": ["no-cache"], "date": ["Thu, 18 Sep 2014 20:16:06 GMT"], "x-frame-options": ["SAMEORIGIN"], "content-type": ["application/json"]}, "status": {"message": "OK", "code": 200}, "url": "https://app.besnappy.com/api/v1/accounts"}, "recorded_at": "2014-09-18T20:16:06"}, {"request": {"body": {"string": "", "encoding": "utf-8"}, "headers": {"Accept-Encoding": ["gzip, deflate"], "Accept": ["*/*"], "User-Agent": ["python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"], "Connection": ["keep-alive"], "content-type": ["application/json; charset=utf-8"], "Authorization": ["Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"]}, "method": "GET", "uri": "https://app.besnappy.com/api/v1/account/3249/mailboxes"}, "response": {"body": {"string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]", "encoding": null}, "headers": {"x-powered-by": ["PHP/5.6.0-1+deb.sury.org~trusty+1"], "transfer-encoding": ["chunked"], "set-cookie": ["snappy_session=eyJpdiI6ImdubEJpS25paUxFY0l5a1NWTlZNNEtWS0FEdGJZanRCV2tpSU5KcWZ0RUE9IiwidmFsdWUiOiJUZG5Ha2N6WVZGK3hSZ0c1NkJaRTJ5RDg3b2UxZ001YVJDcXdpV0N0KzZTQ3c2NkpUR1F6T0ZJbFF1cXhubk5KdGRQQ1VtUEgweDIrNEorMHI3VmN6dz09IiwibWFjIjoiOGE1ZWIzNjJmZmMwZGJkNzUzODViNmE5MjU5ZTQ4NTdkYWU3ZDRjYzA4OTg4YWY1ZWEzM2ViMTVkZTRhMzBkNiJ9; expires=Thu, 18-Sep-2014 22:16:07 GMT; Max-Age=7200; path=/; httponly"], "server": ["nginx/1.6.0"], "connection": ["keep-alive"], "cache-control": ["no-cache"], "date": ["Thu, 18 Sep 2014 20:16:07 GMT"], "x-frame-options": ["SAMEORIGIN"], "content-type": ["application/json"]}, "status": {"message": "OK", "code": 200}, "url": "https://app.besnappy.com/api/v1/account/3249/mailboxes"}, "recorded_at": "2014-09-18T20:16:07"}], "recorded_with": "betamax/0.4.0"}
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2014-09-18T16:10:21",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.example.com/api/v1/account/3249/mailboxes"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]"
+        },
+        "headers": {
+          "cache-control": [
+            "no-cache"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "date": [
+            "Thu, 18 Sep 2014 16:10:21 GMT"
+          ],
+          "server": [
+            "nginx/1.6.0"
+          ],
+          "set-cookie": [
+            "snappy_session=eyJpdiI6IjJmYTZWa3RBS2UrYVJvbjBKdHI3dFJQV1M3ckVzMnQ4UVdla3Zlb2hrVVk9IiwidmFsdWUiOiI1ZER3YjRaZGpUSWNMblJUTEo2NVgxN2JCTVJcL1wvVWhNQ0hDVFpZbHRSbEtIaE1FMUxoaHIyaXljQm4yT1wvYjhGcE5hQTl2Zm1TandVUGJzQjErRzk0dz09IiwibWFjIjoiYzNhZTZjYTg5ZjBmMDZlOTgwNjlmNGU4MWE2ODU0OWVjNDY0OTQzMTFhYzlhOTg4NzNmZTZmYWZmN2MxYTNkZSJ9; expires=Thu, 18-Sep-2014 18:10:21 GMT; Max-Age=7200; path=/; httponly"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-powered-by": [
+            "PHP/5.6.0-1+deb.sury.org~trusty+1"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.example.com/api/v1/account/3249/mailboxes"
+      }
+    },
+    {
+      "recorded_at": "2014-09-18T21:01:25",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/accounts"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":3249,\"organization\":\"Western Cape Labs (Test)\",\"domain\":\"wcldemo.besnappy.com\",\"plan_id\":3,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 14:19:37\",\"custom_domain\":null,\"trial_ends_at\":\"2014-09-30 13:49:36\",\"cancel_message\":null,\"forward_shown\":1,\"badge_url\":\"\",\"last_paid_at\":null,\"invoiced\":null,\"cancelled_at\":null,\"pivot\":{\"staff_id\":3696,\"account_id\":3249,\"username\":\"jeremy\",\"owner\":0,\"admin\":0,\"last_wall_visit\":\"2014-09-18 10:41:15\",\"default_lens\":null,\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"is_paid\":true,\"is_trial\":true}]"
+        },
+        "headers": {
+          "cache-control": [
+            "no-cache"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "date": [
+            "Thu, 18 Sep 2014 21:01:24 GMT"
+          ],
+          "server": [
+            "nginx/1.6.0"
+          ],
+          "set-cookie": [
+            "snappy_session=eyJpdiI6ImFqUnpzY1RKRzFnak13NGs1TW9ST1VYdFdvZWZzNTR2dWVxY3dvTTZnQjA9IiwidmFsdWUiOiJsXC9rRzdoXC9acHFlWE11Y3hsbEpmNWZ5aHd1Zmc0NXdmRFdnS1JmMThHR2hpZ0RiZ3gxOTdCbzBoZ29PMUlJV3JNbVRxQnFHQlFLTEVmbGdid01qd1R3PT0iLCJtYWMiOiJhOGE3NDdhMWI3ZTk2ZDZkOGE3NTcwYjM1MTA1MTdkOTlmNzMzM2MxNWVkZjI5NDM0YzNmYWJkZjY5OGM3NWEyIn0%3D; expires=Thu, 18-Sep-2014 23:01:24 GMT; Max-Age=7200; path=/; httponly"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-powered-by": [
+            "PHP/5.6.0-1+deb.sury.org~trusty+1"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/accounts"
+      }
+    },
+    {
+      "recorded_at": "2014-09-18T21:01:25",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Authorization": [
+            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/account/3249/mailboxes"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]"
+        },
+        "headers": {
+          "cache-control": [
+            "no-cache"
+          ],
+          "connection": [
+            "keep-alive"
+          ],
+          "content-type": [
+            "application/json"
+          ],
+          "date": [
+            "Thu, 18 Sep 2014 21:01:25 GMT"
+          ],
+          "server": [
+            "nginx/1.6.0"
+          ],
+          "set-cookie": [
+            "snappy_session=eyJpdiI6InVUcDA5dk5DcXlURlwvRU1jS0N2QUdwSGRuTkVpbnh5bFVyMG93S0RZK2lZPSIsInZhbHVlIjoiWjRNYkprXC9FdGJXamVUQU5NcXY0XC93MERuNlwvSUtMT0hNOUZBRHZMQmRDcmk1TXZSa2JNOXY1WlBzOEJ4TitxVlJrWTU5blFsalpBTFJsaTZNdk96dEE9PSIsIm1hYyI6IjkyMWU1ZWEwYjJkZDY4YmRjYWMxNTE4MTExYjNmYzQ2NGNjYzAzYzk1ZjkwYWEwNjVmZjk4M2FjMmU2YjZjNzIifQ%3D%3D; expires=Thu, 18-Sep-2014 23:01:25 GMT; Max-Age=7200; path=/; httponly"
+          ],
+          "transfer-encoding": [
+            "chunked"
+          ],
+          "x-frame-options": [
+            "SAMEORIGIN"
+          ],
+          "x-powered-by": [
+            "PHP/5.6.0-1+deb.sury.org~trusty+1"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/account/3249/mailboxes"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.4.0"
+}
