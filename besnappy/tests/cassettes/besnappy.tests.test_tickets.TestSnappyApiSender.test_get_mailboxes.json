@@ -1,11 +1,11 @@
 {
   "http_interactions": [
     {
-      "recorded_at": "2014-09-19T09:30:27",
+      "recorded_at": "2014-09-19T10:01:56",
       "request": {
         "body": {
           "encoding": "utf-8",
-          "string": "{\"mailbox_id\": 3642, \"from\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"message\": \"Are all experiment protocols being followed?\", \"subject\": \"Test subject 890fcc79-ab69-451e-a77f-4c27f55a1e36\"}"
+          "string": ""
         },
         "headers": {
           "Accept": [
@@ -20,9 +20,6 @@
           "Connection": [
             "keep-alive"
           ],
-          "Content-Length": [
-            "212"
-          ],
           "User-Agent": [
             "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
           ],
@@ -30,13 +27,13 @@
             "application/json; charset=utf-8"
           ]
         },
-        "method": "POST",
-        "uri": "https://app.besnappy.com/api/v1/note"
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/account/3249/mailboxes"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAAAAAAAAA0tPLkw0KMsszi0vM86rSMkFABBDddMQAAAA",
-          "encoding": "UTF-8"
+          "encoding": null,
+          "string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]"
         },
         "headers": {
           "cache-control": [
@@ -45,20 +42,17 @@
           "connection": [
             "keep-alive"
           ],
-          "content-encoding": [
-            "gzip"
-          ],
           "content-type": [
-            "text/html; charset=UTF-8"
+            "application/json"
           ],
           "date": [
-            "Fri, 19 Sep 2014 09:30:23 GMT"
+            "Fri, 19 Sep 2014 10:01:52 GMT"
           ],
           "server": [
             "nginx/1.6.0"
           ],
           "set-cookie": [
-            "snappy_session=eyJpdiI6ImFPVnNvV2dRSnlLZTVvU0ZHbVJ1OUZcL3A4UGYwaEVpXC9KWERFc1lJWW5pdz0iLCJ2YWx1ZSI6IkgzK0grUzZVcVdCQTdTN1pZektMbFMwWHBKb0ZHMVNFUUVEdFpPTzZOZDZKUDI1RTJ3OEY4RGx4R0p3ZHk4T0hEN1VCaURraWlXMGFkSnN4UVhicmtRPT0iLCJtYWMiOiJkNTFjYTJiODM5YmEzYzFhZTEzZWNjODNlZmU2ZGEyZGMzYzA0NWEwYzA1MDQwNmIwMzVkNTIzNGRlOWVmNDhlIn0%3D; expires=Fri, 19-Sep-2014 11:30:23 GMT; Max-Age=7200; path=/; httponly"
+            "snappy_session=eyJpdiI6IjdEYnc4ZmthcXZvcXZuWURCMlFxeFNpNjM1Mm1iWWhDWDM2dFwvWHFFd240PSIsInZhbHVlIjoiVW1uMHVYclVKUFNCMnBrN21GTnVjNDRHTkd5UjJUc2FpWmxxMlhoZzdKYUlBanIyRmVDcDBPY0NKMjV0R0pQbmcreXV4ODhPRExuSVdWZWZlU01uQ3c9PSIsIm1hYyI6Ijc2NWE2YTkzZGI3YzI2NmI5YzFjZGFlMDU1MTc3MzczZTZjM2U3ZjJiM2JjZGYzYjExYWQ4OWIzMGU1MWU5NDAifQ%3D%3D; expires=Fri, 19-Sep-2014 12:01:52 GMT; Max-Age=7200; path=/; httponly"
           ],
           "transfer-encoding": [
             "chunked"
@@ -74,7 +68,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://app.besnappy.com/api/v1/note"
+        "url": "https://app.besnappy.com/api/v1/account/3249/mailboxes"
       }
     }
   ],

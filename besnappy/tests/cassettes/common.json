@@ -72,7 +72,7 @@
       }
     },
     {
-      "recorded_at": "2014-09-18T21:01:25",
+      "recorded_at": "2014-09-19T10:01:59",
       "request": {
         "body": {
           "encoding": "utf-8",
@@ -117,13 +117,13 @@
             "application/json"
           ],
           "date": [
-            "Thu, 18 Sep 2014 21:01:24 GMT"
+            "Fri, 19 Sep 2014 10:01:55 GMT"
           ],
           "server": [
             "nginx/1.6.0"
           ],
           "set-cookie": [
-            "snappy_session=eyJpdiI6ImFqUnpzY1RKRzFnak13NGs1TW9ST1VYdFdvZWZzNTR2dWVxY3dvTTZnQjA9IiwidmFsdWUiOiJsXC9rRzdoXC9acHFlWE11Y3hsbEpmNWZ5aHd1Zmc0NXdmRFdnS1JmMThHR2hpZ0RiZ3gxOTdCbzBoZ29PMUlJV3JNbVRxQnFHQlFLTEVmbGdid01qd1R3PT0iLCJtYWMiOiJhOGE3NDdhMWI3ZTk2ZDZkOGE3NTcwYjM1MTA1MTdkOTlmNzMzM2MxNWVkZjI5NDM0YzNmYWJkZjY5OGM3NWEyIn0%3D; expires=Thu, 18-Sep-2014 23:01:24 GMT; Max-Age=7200; path=/; httponly"
+            "snappy_session=eyJpdiI6IitYTU4zVU1CU1EyUzR3V0VaMVRkUFVpMmU2cENGMjVDSCtQOFZoTllaaGM9IiwidmFsdWUiOiJndFNhSFZPdlo1c3AxOWJuTjVSVmpMRnduaEF6TG1LdVFnMFhIRTRhOHgyVjZ6NDQ3eWZtVWNtdWRZSE1OeXRkRXJQUnFOK2dzOWdBOVhMc1wvWk1welE9PSIsIm1hYyI6IjJiMTVmODkzZTU3ZjBkYjYyMWY5NjMzYjgzYzc3NzhkMWZkNTZhYWE5ODhjYTZiNzEyOTIwM2FlZmIzZTc5ZjMifQ%3D%3D; expires=Fri, 19-Sep-2014 12:01:55 GMT; Max-Age=7200; path=/; httponly"
           ],
           "transfer-encoding": [
             "chunked"
@@ -143,7 +143,7 @@
       }
     },
     {
-      "recorded_at": "2014-09-18T21:01:25",
+      "recorded_at": "2014-09-19T10:02:00",
       "request": {
         "body": {
           "encoding": "utf-8",
@@ -188,13 +188,13 @@
             "application/json"
           ],
           "date": [
-            "Thu, 18 Sep 2014 21:01:25 GMT"
+            "Fri, 19 Sep 2014 10:01:56 GMT"
           ],
           "server": [
             "nginx/1.6.0"
           ],
           "set-cookie": [
-            "snappy_session=eyJpdiI6InVUcDA5dk5DcXlURlwvRU1jS0N2QUdwSGRuTkVpbnh5bFVyMG93S0RZK2lZPSIsInZhbHVlIjoiWjRNYkprXC9FdGJXamVUQU5NcXY0XC93MERuNlwvSUtMT0hNOUZBRHZMQmRDcmk1TXZSa2JNOXY1WlBzOEJ4TitxVlJrWTU5blFsalpBTFJsaTZNdk96dEE9PSIsIm1hYyI6IjkyMWU1ZWEwYjJkZDY4YmRjYWMxNTE4MTExYjNmYzQ2NGNjYzAzYzk1ZjkwYWEwNjVmZjk4M2FjMmU2YjZjNzIifQ%3D%3D; expires=Thu, 18-Sep-2014 23:01:25 GMT; Max-Age=7200; path=/; httponly"
+            "snappy_session=eyJpdiI6IjNjQkxxSExjaXh5WFFNNUg5WVdLRXJ2akppZ0UrUVdZRys5cjhxVFI2bE09IiwidmFsdWUiOiJMYmd1anVianlraHZIbEZ6N1VaalgwYlJUeTZicHExUlpqdVVZOWozK2w4bEdyZWJ5SmI3aWdycnBKNDBpalRPZ29IbWQ0ZUp1b0pNcnAzZFFyWVRpZz09IiwibWFjIjoiYjIxOTI1NmEyOWEwMDYxYTk1NGFjNzk2YTA2MWQ1OTBhZTEwZjViODgzZTIwODdkZGI3NzgyOWI0MWNjZDYzYSJ9; expires=Fri, 19-Sep-2014 12:01:56 GMT; Max-Age=7200; path=/; httponly"
           ],
           "transfer-encoding": [
             "chunked"

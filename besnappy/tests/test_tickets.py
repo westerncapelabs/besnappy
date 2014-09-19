@@ -50,6 +50,7 @@ class TestSnappyApiSender(TestCase):
         self.common_session = Session()
         self.betamax_common = Betamax(
             self.common_session, cassette_library_dir=CASSETTE_LIBRARY_DIR)
+        self.common_snappy = self._get_common_snappy()
 
     def tearDown(self):
         self.betamax.stop()
@@ -72,7 +73,7 @@ class TestSnappyApiSender(TestCase):
         self.betamax.start()
         return self.snappy_for_session(self.betamax_session, api_key, api_url)
 
-    def get_common_snappy(self, api_key=None, api_url=None):
+    def _get_common_snappy(self, api_key=None, api_url=None):
         """
         Build a ``SnappyApiSender`` instance using the common session.
 
@@ -110,15 +111,110 @@ class TestSnappyApiSender(TestCase):
         resp = snappy._api_request("GET", "flash")
         self.assertEqual(resp.content, "ok")
 
+    ####################################
+    # Tests for public API below here. #
+    ####################################
+
+    def get_account_id(self):
+        """
+        Get an account_id for use in further tests.
+
+        This uses the common betamax instead of the test-specific one.
+
+        Because we don't have very much control over the account we're testing
+        against, we always choose the first account in the list.
+        """
+        accounts = self.common_snappy.get_accounts()
+        return accounts[0]["id"]
+
+    def get_mailbox_id(self):
+        """
+        Get a mailbox_id for use in further tests.
+
+        This uses the common betamax instead of the test-specific one.
+
+        Because we don't have very much control over the account we're testing
+        against, we always choose the first mailbox in first account in the
+        list.
+        """
+        account_id = self.get_account_id()
+        mailboxes = self.common_snappy.get_mailboxes(account_id)
+        return mailboxes[0]["id"]
+
+    def assert_looks_like_account_dict(self, obj):
+        """
+        Assertion fails if the provided object doesn't look sufficiently like
+        an account dict.
+
+        TODO: Determine if this is good enough.
+        """
+        self.assertTrue(isinstance(obj, dict), "Not a dict: %r" % (obj,))
+        account_fields = set([
+            "id", "organization", "domain", "plan_id", "active", "created_at",
+            "updated_at", "custom_domain"])
+        missing_fields = account_fields - set(obj.keys())
+        self.assertEqual(
+            missing_fields, set(), "Dict missing account fields: %s" % (
+                ", ".join(sorted(missing_fields)),))
+
+    def assert_looks_like_mailbox_dict(self, obj, account_id):
+        """
+        Assertion fails if the provided object doesn't look sufficiently like
+        a mailbox dict belonging to the specified account.
+
+        TODO: Determine if this is good enough.
+        """
+        self.assertTrue(isinstance(obj, dict), "Not a dict: %r" % (obj,))
+        mailbox_fields = set([
+            "id", "account_id", "type", "address", "display",
+            "auto_responding", "auto_response", "active", "created_at",
+            "updated_at", "custom_address", "theme", "local_part"])
+        missing_fields = mailbox_fields - set(obj.keys())
+        self.assertEqual(
+            missing_fields, set(), "Dict missing mailbox fields: %s" % (
+                ", ".join(sorted(missing_fields)),))
+        self.assertEqual(obj["account_id"], account_id)
+
+    def test_get_accounts(self):
+        """
+        ``.get_accounts()`` returns a list of accounts.
+
+        Because we don't have very much control over the account we're testing
+        against, we can only assert on the general structure. We always choose
+        the first account in the list.
+        """
+        snappy = self.get_snappy()
+        accounts = snappy.get_accounts()
+        self.assertTrue(isinstance(accounts, list))
+        self.assertTrue(len(accounts) >= 1)
+        account = accounts[0]
+        self.assert_looks_like_account_dict(account)
+        # TODO: Make a call that requires an account identifier and assert that
+        #       it succeeds.
+
+    def test_get_mailboxes(self):
+        """
+        ``.get_mailboxes()`` returns a list of mailboxes for an account.
+
+        Because we don't have very much control over the account we're testing
+        against, we can only assert on the general structure. We always choose
+        the first account in the list.
+        """
+        account_id = self.get_account_id()
+        snappy = self.get_snappy()
+        mailboxes = snappy.get_mailboxes(account_id)
+        self.assertTrue(isinstance(mailboxes, list))
+        self.assertTrue(len(mailboxes) >= 1)
+        mailbox = mailboxes[0]
+        self.assert_looks_like_mailbox_dict(mailbox, account_id)
+        # TODO: Make a call that requires a mailbox identifier and assert that
+        #       it succeeds.
+
     def test_note_foo(self):
         """
         XXX: This is a temporary test method to prototype the use of betamax.
         """
-        common_snappy = self.get_common_snappy()
-        resp = common_snappy.get_accounts()
-        account_id = resp[0]["id"]
-        resp = common_snappy.get_mailboxes(account_id)
-        mailbox_id = resp[0]["id"]
+        mailbox_id = self.get_mailbox_id()
         snappy = self.get_snappy()
         resp = snappy.note(
             mailbox_id, "Test subject %s" % (uuid.uuid4(),),
