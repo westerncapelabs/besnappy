@@ -222,3 +222,4 @@ class TestSnappyApiSender(TestCase):
                 "name": "John Smith",
                 "address": "john.smith@gmail.com",
             }])
+        print resp
