@@ -1,31 +1,19 @@
 {
   "http_interactions": [
     {
-      "recorded_at": "2014-09-19T10:01:51",
+      "recorded_at": "2014-09-19T14:24:03",
       "request": {
         "body": {
           "encoding": "utf-8",
           "string": ""
         },
         "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Authorization": [
-            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "User-Agent": [
-            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
-          ],
-          "content-type": [
-            "application/json; charset=utf-8"
-          ]
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
         },
         "method": "GET",
         "uri": "https://app.besnappy.com/api/v1/accounts"
@@ -36,33 +24,15 @@
           "string": "[{\"id\":3249,\"organization\":\"Western Cape Labs (Test)\",\"domain\":\"wcldemo.besnappy.com\",\"plan_id\":3,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 14:19:37\",\"custom_domain\":null,\"trial_ends_at\":\"2014-09-30 13:49:36\",\"cancel_message\":null,\"forward_shown\":1,\"badge_url\":\"\",\"last_paid_at\":null,\"invoiced\":null,\"cancelled_at\":null,\"pivot\":{\"staff_id\":3696,\"account_id\":3249,\"username\":\"jeremy\",\"owner\":0,\"admin\":0,\"last_wall_visit\":\"2014-09-18 10:41:15\",\"default_lens\":null,\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"is_paid\":true,\"is_trial\":true}]"
         },
         "headers": {
-          "cache-control": [
-            "no-cache"
-          ],
-          "connection": [
-            "keep-alive"
-          ],
-          "content-type": [
-            "application/json"
-          ],
-          "date": [
-            "Fri, 19 Sep 2014 10:01:47 GMT"
-          ],
-          "server": [
-            "nginx/1.6.0"
-          ],
-          "set-cookie": [
-            "snappy_session=eyJpdiI6InlqMmJXQTRjTHRyTmoySmlWRktnVVI2bEJyN3JcL1FZQnpnSWc0UmxyOXhRPSIsInZhbHVlIjoiNGhxRk83VjRZY1dyYnRYM2lGdFhHdnZucHExNlR5c1RKa3lJU3A2RnlHN1VsbWF3K0Z2ZWgyanNPMUlCRDU4eUs4WHJWbzc3MGlWREZEOTZVUDZjUGc9PSIsIm1hYyI6ImJiNDRjNTk4MmU5MDBmZWU2M2JkMTM3OTI2ZGYzN2Y1ZDJlODJkYWFhMzllNDI3NDZjODZkNjQ2ZTBiNzNlZWQifQ%3D%3D; expires=Fri, 19-Sep-2014 12:01:47 GMT; Max-Age=7200; path=/; httponly"
-          ],
-          "transfer-encoding": [
-            "chunked"
-          ],
-          "x-frame-options": [
-            "SAMEORIGIN"
-          ],
-          "x-powered-by": [
-            "PHP/5.6.0-1+deb.sury.org~trusty+1"
-          ]
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Fri, 19 Sep 2014 14:24:02 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6Ikd2K2pEcDZIQTFGemFXOUY0NXhDZk9oQ01ZSXlhaHdQYk5RekZyM0ZNTFE9IiwidmFsdWUiOiJZWFFIZ3hyemRSNFJ0MlFUVEpWd283clYrM3pqZXp0RVdKZitJYTh2eVhHRVBFdzlIdGVIUDlVNjZGbUE1YkZsUHZvdUZ0anpJUmtJaG9lSHdZYStXdz09IiwibWFjIjoiMmIwMzAxNWRiNGI5OTc1NjI4Yjk3NzFjYTIxZTIwOTRmZmExZjIyYjRkOWUxYjIyNDIyOTBhOTVkNTA2ZWZiNyJ9; expires=Fri, 19-Sep-2014 16:24:02 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
         },
         "status": {
           "code": 200,

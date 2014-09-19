@@ -1,7 +1,7 @@
 """ Utilities for sending to Snappy HTTP API.
 """
 import json
-import requests
+from requests import Session
 
 
 class SnappyApiSender(object):
@@ -28,7 +28,7 @@ class SnappyApiSender(object):
             api_url = "https://app.besnappy.com/api/v1"
         self.api_url = api_url
         if session is None:
-            session = requests.Session()
+            session = Session()
         self.session = session
 
     def _api_request(self, method, endpoint, py_data=None):

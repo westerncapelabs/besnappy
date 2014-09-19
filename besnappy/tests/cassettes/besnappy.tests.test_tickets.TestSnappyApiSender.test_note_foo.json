@@ -1,74 +1,41 @@
 {
   "http_interactions": [
     {
-      "recorded_at": "2014-09-19T09:30:27",
+      "recorded_at": "2014-09-19T14:24:10",
       "request": {
         "body": {
           "encoding": "utf-8",
-          "string": "{\"mailbox_id\": 3642, \"from\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"message\": \"Are all experiment protocols being followed?\", \"subject\": \"Test subject 890fcc79-ab69-451e-a77f-4c27f55a1e36\"}"
+          "string": "{\"mailbox_id\": 3642, \"from\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"message\": \"Are all experiment protocols being followed?\", \"subject\": \"Test subject $SUBJECT_UUID$\"}"
         },
         "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Authorization": [
-            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "Content-Length": [
-            "212"
-          ],
-          "User-Agent": [
-            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
-          ],
-          "content-type": [
-            "application/json; charset=utf-8"
-          ]
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "Content-Length": "212",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
         },
         "method": "POST",
         "uri": "https://app.besnappy.com/api/v1/note"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAAAAAAAAA0tPLkw0KMsszi0vM86rSMkFABBDddMQAAAA",
-          "encoding": "UTF-8"
+          "base64_string": "H4sIAAAAAAAAA0vLzkpJNSzIK0szzas0NU0DAHeJZ3MQAAAA",
+          "encoding": "UTF-8",
+          "string": ""
         },
         "headers": {
-          "cache-control": [
-            "no-cache"
-          ],
-          "connection": [
-            "keep-alive"
-          ],
-          "content-encoding": [
-            "gzip"
-          ],
-          "content-type": [
-            "text/html; charset=UTF-8"
-          ],
-          "date": [
-            "Fri, 19 Sep 2014 09:30:23 GMT"
-          ],
-          "server": [
-            "nginx/1.6.0"
-          ],
-          "set-cookie": [
-            "snappy_session=eyJpdiI6ImFPVnNvV2dRSnlLZTVvU0ZHbVJ1OUZcL3A4UGYwaEVpXC9KWERFc1lJWW5pdz0iLCJ2YWx1ZSI6IkgzK0grUzZVcVdCQTdTN1pZektMbFMwWHBKb0ZHMVNFUUVEdFpPTzZOZDZKUDI1RTJ3OEY4RGx4R0p3ZHk4T0hEN1VCaURraWlXMGFkSnN4UVhicmtRPT0iLCJtYWMiOiJkNTFjYTJiODM5YmEzYzFhZTEzZWNjODNlZmU2ZGEyZGMzYzA0NWEwYzA1MDQwNmIwMzVkNTIzNGRlOWVmNDhlIn0%3D; expires=Fri, 19-Sep-2014 11:30:23 GMT; Max-Age=7200; path=/; httponly"
-          ],
-          "transfer-encoding": [
-            "chunked"
-          ],
-          "x-frame-options": [
-            "SAMEORIGIN"
-          ],
-          "x-powered-by": [
-            "PHP/5.6.0-1+deb.sury.org~trusty+1"
-          ]
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-encoding": "gzip",
+          "content-type": "text/html; charset=UTF-8",
+          "date": "Fri, 19 Sep 2014 14:24:10 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IlJucHJjWFZGUXE0OGFaelNjQ01XVkpqb1VhamRaK3Y4QThFWjVcL3ZLd2FvPSIsInZhbHVlIjoiQXE5T3dOQ2R0NTV0cmNWSDhqU0ZlbGxPaWpoQlhsVkxKTGlxZ3cxUUpyYzVob1hYdEZrbjEwbVV6UUtobitja3YzS1pZZ0pRdGk5dWRnVGJsWkZuOGc9PSIsIm1hYyI6IjFjOTUzNzc4NDMxM2RkOWI1ZDNlZjIzYTllNzNiNzVjMTAzNGM3ZDM1NTM4NDA5MGM3ZmI3ODZhODYzMDllOGQifQ%3D%3D; expires=Fri, 19-Sep-2014 16:24:10 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
         },
         "status": {
           "code": 200,

@@ -8,24 +8,12 @@
           "string": ""
         },
         "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Authorization": [
-            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "User-Agent": [
-            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
-          ],
-          "content-type": [
-            "application/json; charset=utf-8"
-          ]
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
         },
         "method": "GET",
         "uri": "https://app.besnappy.example.com/api/v1/account/3249/mailboxes"
@@ -36,33 +24,15 @@
           "string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]"
         },
         "headers": {
-          "cache-control": [
-            "no-cache"
-          ],
-          "connection": [
-            "keep-alive"
-          ],
-          "content-type": [
-            "application/json"
-          ],
-          "date": [
-            "Thu, 18 Sep 2014 16:10:21 GMT"
-          ],
-          "server": [
-            "nginx/1.6.0"
-          ],
-          "set-cookie": [
-            "snappy_session=eyJpdiI6IjJmYTZWa3RBS2UrYVJvbjBKdHI3dFJQV1M3ckVzMnQ4UVdla3Zlb2hrVVk9IiwidmFsdWUiOiI1ZER3YjRaZGpUSWNMblJUTEo2NVgxN2JCTVJcL1wvVWhNQ0hDVFpZbHRSbEtIaE1FMUxoaHIyaXljQm4yT1wvYjhGcE5hQTl2Zm1TandVUGJzQjErRzk0dz09IiwibWFjIjoiYzNhZTZjYTg5ZjBmMDZlOTgwNjlmNGU4MWE2ODU0OWVjNDY0OTQzMTFhYzlhOTg4NzNmZTZmYWZmN2MxYTNkZSJ9; expires=Thu, 18-Sep-2014 18:10:21 GMT; Max-Age=7200; path=/; httponly"
-          ],
-          "transfer-encoding": [
-            "chunked"
-          ],
-          "x-frame-options": [
-            "SAMEORIGIN"
-          ],
-          "x-powered-by": [
-            "PHP/5.6.0-1+deb.sury.org~trusty+1"
-          ]
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Thu, 18 Sep 2014 16:10:21 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IjJmYTZWa3RBS2UrYVJvbjBKdHI3dFJQV1M3ckVzMnQ4UVdla3Zlb2hrVVk9IiwidmFsdWUiOiI1ZER3YjRaZGpUSWNMblJUTEo2NVgxN2JCTVJcL1wvVWhNQ0hDVFpZbHRSbEtIaE1FMUxoaHIyaXljQm4yT1wvYjhGcE5hQTl2Zm1TandVUGJzQjErRzk0dz09IiwibWFjIjoiYzNhZTZjYTg5ZjBmMDZlOTgwNjlmNGU4MWE2ODU0OWVjNDY0OTQzMTFhYzlhOTg4NzNmZTZmYWZmN2MxYTNkZSJ9; expires=Thu, 18-Sep-2014 18:10:21 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
         },
         "status": {
           "code": 200,
@@ -72,31 +42,19 @@
       }
     },
     {
-      "recorded_at": "2014-09-19T10:01:59",
+      "recorded_at": "2014-09-19T14:24:07",
       "request": {
         "body": {
           "encoding": "utf-8",
           "string": ""
         },
         "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Authorization": [
-            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "User-Agent": [
-            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
-          ],
-          "content-type": [
-            "application/json; charset=utf-8"
-          ]
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
         },
         "method": "GET",
         "uri": "https://app.besnappy.com/api/v1/accounts"
@@ -107,33 +65,15 @@
           "string": "[{\"id\":3249,\"organization\":\"Western Cape Labs (Test)\",\"domain\":\"wcldemo.besnappy.com\",\"plan_id\":3,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 14:19:37\",\"custom_domain\":null,\"trial_ends_at\":\"2014-09-30 13:49:36\",\"cancel_message\":null,\"forward_shown\":1,\"badge_url\":\"\",\"last_paid_at\":null,\"invoiced\":null,\"cancelled_at\":null,\"pivot\":{\"staff_id\":3696,\"account_id\":3249,\"username\":\"jeremy\",\"owner\":0,\"admin\":0,\"last_wall_visit\":\"2014-09-18 10:41:15\",\"default_lens\":null,\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"is_paid\":true,\"is_trial\":true}]"
         },
         "headers": {
-          "cache-control": [
-            "no-cache"
-          ],
-          "connection": [
-            "keep-alive"
-          ],
-          "content-type": [
-            "application/json"
-          ],
-          "date": [
-            "Fri, 19 Sep 2014 10:01:55 GMT"
-          ],
-          "server": [
-            "nginx/1.6.0"
-          ],
-          "set-cookie": [
-            "snappy_session=eyJpdiI6IitYTU4zVU1CU1EyUzR3V0VaMVRkUFVpMmU2cENGMjVDSCtQOFZoTllaaGM9IiwidmFsdWUiOiJndFNhSFZPdlo1c3AxOWJuTjVSVmpMRnduaEF6TG1LdVFnMFhIRTRhOHgyVjZ6NDQ3eWZtVWNtdWRZSE1OeXRkRXJQUnFOK2dzOWdBOVhMc1wvWk1welE9PSIsIm1hYyI6IjJiMTVmODkzZTU3ZjBkYjYyMWY5NjMzYjgzYzc3NzhkMWZkNTZhYWE5ODhjYTZiNzEyOTIwM2FlZmIzZTc5ZjMifQ%3D%3D; expires=Fri, 19-Sep-2014 12:01:55 GMT; Max-Age=7200; path=/; httponly"
-          ],
-          "transfer-encoding": [
-            "chunked"
-          ],
-          "x-frame-options": [
-            "SAMEORIGIN"
-          ],
-          "x-powered-by": [
-            "PHP/5.6.0-1+deb.sury.org~trusty+1"
-          ]
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Fri, 19 Sep 2014 14:24:07 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IkdMcXZOdzk0UUs0YUl1RDVhenJ0c1d1clBaZnNCT3N0RFFTaEg4eis3clE9IiwidmFsdWUiOiJHbXczbGhxcXROMklBUUtzY3NiTlpxbXUwVmxTQkZGS1grWHR6SEZIeHdRbFhlYW5lcXJTbzc1RFcwS0ZkTVI0TUthNk9QN1JscDF4M2Z4VFBpUHV6Zz09IiwibWFjIjoiOGU1ODg5NDcxOGFkYmU0MDI3YTBjYzc2Y2IwY2UzZjA5YTc0YzIyMzMzMDE0Mjc4YjNiZGUzMmZhMGRjOTJjYSJ9; expires=Fri, 19-Sep-2014 16:24:07 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
         },
         "status": {
           "code": 200,
@@ -143,31 +83,19 @@
       }
     },
     {
-      "recorded_at": "2014-09-19T10:02:00",
+      "recorded_at": "2014-09-19T14:24:08",
       "request": {
         "body": {
           "encoding": "utf-8",
           "string": ""
         },
         "headers": {
-          "Accept": [
-            "*/*"
-          ],
-          "Accept-Encoding": [
-            "gzip, deflate"
-          ],
-          "Authorization": [
-            "Basic ZTg3ZWJlZmIxZjBkNzQzYjdjY2E2NWVlMjhmYjI1NDlhNWU5NzA5ZmJmZDNiNDg0MTVlNDM0OTEyYzU4NjEwOTp4"
-          ],
-          "Connection": [
-            "keep-alive"
-          ],
-          "User-Agent": [
-            "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0"
-          ],
-          "content-type": [
-            "application/json; charset=utf-8"
-          ]
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
         },
         "method": "GET",
         "uri": "https://app.besnappy.com/api/v1/account/3249/mailboxes"
@@ -178,33 +106,15 @@
           "string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]"
         },
         "headers": {
-          "cache-control": [
-            "no-cache"
-          ],
-          "connection": [
-            "keep-alive"
-          ],
-          "content-type": [
-            "application/json"
-          ],
-          "date": [
-            "Fri, 19 Sep 2014 10:01:56 GMT"
-          ],
-          "server": [
-            "nginx/1.6.0"
-          ],
-          "set-cookie": [
-            "snappy_session=eyJpdiI6IjNjQkxxSExjaXh5WFFNNUg5WVdLRXJ2akppZ0UrUVdZRys5cjhxVFI2bE09IiwidmFsdWUiOiJMYmd1anVianlraHZIbEZ6N1VaalgwYlJUeTZicHExUlpqdVVZOWozK2w4bEdyZWJ5SmI3aWdycnBKNDBpalRPZ29IbWQ0ZUp1b0pNcnAzZFFyWVRpZz09IiwibWFjIjoiYjIxOTI1NmEyOWEwMDYxYTk1NGFjNzk2YTA2MWQ1OTBhZTEwZjViODgzZTIwODdkZGI3NzgyOWI0MWNjZDYzYSJ9; expires=Fri, 19-Sep-2014 12:01:56 GMT; Max-Age=7200; path=/; httponly"
-          ],
-          "transfer-encoding": [
-            "chunked"
-          ],
-          "x-frame-options": [
-            "SAMEORIGIN"
-          ],
-          "x-powered-by": [
-            "PHP/5.6.0-1+deb.sury.org~trusty+1"
-          ]
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Fri, 19 Sep 2014 14:24:07 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6ImVMdFVmRjhMMGtITWFTUzNBSjBPK1dEN1hwbDE5RlRXc1pFUGN1eDNueFE9IiwidmFsdWUiOiJJRG1KY0VGVk9oS0FhOTRPaEd2aDkwXC84d21aYUVnVmx1OTg3Y2hzRW1BTGlHTzJLZ3R2NStVdzVUaFwvejYrRklDNm1iM0Z1OHNPUXg2MkVCQTR4VkdRPT0iLCJtYWMiOiJjNmU1ZGMzOWE4MjcwNDQ1NDAwNWI1MDUxZDExMTgwMTBhMmU1YzA0NzMzODE4ZDdhZGQzNDNjYmQyMTEyMjllIn0%3D; expires=Fri, 19-Sep-2014 16:24:07 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
         },
         "status": {
           "code": 200,

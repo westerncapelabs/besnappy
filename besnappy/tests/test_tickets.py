@@ -10,6 +10,7 @@ import uuid
 from betamax import Betamax
 from betamax.serializers import JSONSerializer
 from requests import Session
+from requests.auth import HTTPBasicAuth
 from requests_testadapter import TestSession, TestAdapter
 
 from besnappy.tickets import SnappyApiSender
@@ -28,6 +29,21 @@ class PrettyJSONSerializer(JSONSerializer):
 
 
 Betamax.register_serializer(PrettyJSONSerializer)
+
+
+class _AuthHeaderGrabberFakeRequest(object):
+    def __init__(self):
+        self.headers = {}
+
+    @property
+    def auth_header_value(self):
+        return self.headers.get("Authorization")
+
+
+def basic_auth_header_value(api_key):
+    r = _AuthHeaderGrabberFakeRequest()
+    HTTPBasicAuth(api_key, "x")(r)
+    return r.auth_header_value
 
 
 class TestSnappyApiSender(TestCase):
@@ -50,11 +66,17 @@ class TestSnappyApiSender(TestCase):
         self.common_session = Session()
         self.betamax_common = Betamax(
             self.common_session, cassette_library_dir=CASSETTE_LIBRARY_DIR)
+        self.betamax_placeholders = []
         self.common_snappy = self._get_common_snappy()
 
     def tearDown(self):
         self.betamax.stop()
         self.betamax_common.stop()
+
+    def add_betamax_placeholder(self, placeholder, replace):
+        placeholder_dict = {"placeholder": placeholder, "replace": replace}
+        if placeholder_dict not in self.betamax_placeholders:
+            self.betamax_placeholders.append(placeholder_dict)
 
     def snappy_for_session(self, session, api_key=None, api_url=None):
         """
@@ -64,14 +86,28 @@ class TestSnappyApiSender(TestCase):
             api_key = self.api_key
         return SnappyApiSender(api_key, api_url=api_url, session=session)
 
+    def _snappy_for_betamax(self, betamax, cassette_name, api_key, api_url):
+        """
+        Build a ``SnappyApiSender`` instance using the provided betamax object.
+        """
+        if api_key is None:
+            api_key = self.api_key
+        auth_header_value = basic_auth_header_value(api_key)
+        self.add_betamax_placeholder("$AUTH_HEADER$", auth_header_value)
+        betamax.use_cassette(
+            cassette_name, record=self.betamax_record,
+            serialize_with="prettyjson",
+            placeholders=self.betamax_placeholders,
+            match_requests_on=["method", "uri"])
+        betamax.start()
+        return self.snappy_for_session(betamax.session, api_key, api_url)
+
     def get_snappy(self, api_key=None, api_url=None):
         """
         Build a ``SnappyApiSender`` instance using the test session.
         """
-        self.betamax.use_cassette(
-            self.id(), record=self.betamax_record, serialize_with="prettyjson")
-        self.betamax.start()
-        return self.snappy_for_session(self.betamax_session, api_key, api_url)
+        return self._snappy_for_betamax(
+            self.betamax, self.id(), api_key, api_url)
 
     def _get_common_snappy(self, api_key=None, api_url=None):
         """
@@ -81,10 +117,8 @@ class TestSnappyApiSender(TestCase):
         set up the environment for the test to use rather than being part of
         the test logic.
         """
-        self.betamax_common.use_cassette(
-            "common", record=self.betamax_record, serialize_with="prettyjson")
-        self.betamax_common.start()
-        return self.snappy_for_session(self.common_session, api_key, api_url)
+        return self._snappy_for_betamax(
+            self.betamax_common, "common", api_key, api_url)
 
     def test_api_request_url_construction_default_api_url(self):
         """
@@ -216,8 +250,13 @@ class TestSnappyApiSender(TestCase):
         """
         mailbox_id = self.get_mailbox_id()
         snappy = self.get_snappy()
+        subject_uuid = str(uuid.uuid4())
+        self.betamax_placeholders.append({
+            "placeholder": "$SUBJECT_UUID$",
+            "replace": subject_uuid,
+        })
         resp = snappy.note(
-            mailbox_id, "Test subject %s" % (uuid.uuid4(),),
+            mailbox_id, "Test subject %s" % (subject_uuid,),
             "Are all experiment protocols being followed?", from_addr=[{
                 "name": "John Smith",
                 "address": "john.smith@gmail.com",
