@@ -1,0 +1,164 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2014-09-22T11:40:57",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/hkyafaudtk2gsgud/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":471872,\"account_id\":3249,\"ticket_id\":268193,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411386044,\"updated_at\":\"2014-09-22 11:40:44\",\"content\":\"Are all experiment protocols being followed?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471872,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 11:40:46 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6Im9iYllxT3I3NGVxN1Qxa3BubmZlMzFkaXJhcnBFUDROZDFkNG1OQjFWN2M9IiwidmFsdWUiOiJzQXB4Y1Y1ejYydVBLUDJrcjEzYWlkVEZkYkZlcGdVWkZQdkplYWJDUDlTUUJSM0NMbHN5VXpzTGhOdXQ4TmF3M1ZcL0lFZThBdGJQM0htWUxSSm9NcVE9PSIsIm1hYyI6IjMzMzMyMDQ2ODhlODMzMTQyYTY3Mzc3NTBiMDg4YzUzYTk3YmQyNjIwYmYxY2I0YjYwZmU3OTg1MTM3OGExNTQifQ%3D%3D; expires=Mon, 22-Sep-2014 13:40:46 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/hkyafaudtk2gsgud/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T11:57:24",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/sv4a1akwohjynjj1/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":471924,\"account_id\":3249,\"ticket_id\":268225,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411387031,\"updated_at\":\"2014-09-22 11:57:11\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471924,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 11:57:13 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IlBcL2Q0WEk2a056UmZxeWFUSFwvNGhKdEtRN3RCSXlkZjJTMVlySmU4QkRFMD0iLCJ2YWx1ZSI6IkhvZjVTSk1zYlR2V3BsNWFRV3ozT2xcL1FRSmpzUnNMNXJTck9EVEV3bEprVGdmZ0tMNEVmUFwvM1B2TmZqS1FTMWFcL3ZwTnNlQnFFdGxDNkxJNW9scnNRPT0iLCJtYWMiOiI2MzUzMzkxYjVmZjk0ODhiMTk3NzBiNmY5NzE3ZTYyZDNlOTZhYmUzYTQ1ZTJjODQ0MzNiNmM5NDc1NjQ0NmQ0In0%3D; expires=Mon, 22-Sep-2014 13:57:13 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/sv4a1akwohjynjj1/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:46:45",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"mailbox_id\": 3642, \"from\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"message\": \"What are the experiment protocols for subject $SUBJECT_UUID$?\", \"subject\": \"Test subject $SUBJECT_UUID$\"}"
+        },
+        "headers": {
+          "Accept-encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Content-Length": "251",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "POST",
+        "uri": "https://app.besnappy.com/api/v1/note"
+      },
+      "response": {
+        "body": {
+          "encoding": "UTF-8",
+          "string": "u6cisayjz8ewpsgu"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "text/html; charset=UTF-8",
+          "date": "Mon, 22 Sep 2014 12:46:44 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IjhGV1VkRldBTVA1RnRjQ3VCeVwvUVIrcDJTWGVkMFRYQTBxU0lrUnNTSDAwPSIsInZhbHVlIjoiVTFGMkpuRUhZM2thdjRtNG9vUVMrbTZ2bE1vRnlcL0xjMW5TVENBMmFmakFCdWdzT0NhcnI0cjJvc2JaZFwvTlFuK1pGd1M2dTlGcU9BXC9ZbjJLOGZHK0E9PSIsIm1hYyI6IjFhODU2OGMyOTNlZWRiMGI3Yjg5ODNkOTlmNDIwY2Q1MTM2ZTY5NWY1NmM5NzY2NDY5YjVjYWIzZjgwYmU0NzIifQ%3D%3D; expires=Mon, 22-Sep-2014 14:46:44 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/note"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:46:45",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept-encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/u6cisayjz8ewpsgu/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":472067,\"account_id\":3249,\"ticket_id\":268308,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411390003,\"updated_at\":\"2014-09-22 12:46:43\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":472067,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:46:45 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IlhjQmJwS3F4UWUxYVwvUWF1aEZsYnJQd1dOK3N5UEZUckxPRDExeHc5RTJBPSIsInZhbHVlIjoieGdVdFFTNHlVNkFXNVNmRnRzbUNDcnZ0TXBzaTgxSGlZYkVCMmhmdmxSRUFzVkFiU1hUM0toRGpYZzI3MGpXYTFnaHY1cmhIS3RCUUZzXC9pT0lTalJBPT0iLCJtYWMiOiJhZGJlMjczNjY4NGYyNmM2NDgxYWQyYWU0N2FkMzJiYmYwZjQzYmViNmIyNWQ0MGE3NGI2NDk2NDJlZDZkODczIn0%3D; expires=Mon, 22-Sep-2014 14:46:45 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/u6cisayjz8ewpsgu/notes/"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.4.0"
+}

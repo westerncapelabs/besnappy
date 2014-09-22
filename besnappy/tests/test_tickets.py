@@ -61,9 +61,11 @@ class TestSnappyApiSender(TestCase):
 
         self.no_http_session = TestSession()
         self.betamax_session = Session()
+        self.betamax_session.headers = {"Accept-encoding": ""}
         self.betamax = Betamax(
             self.betamax_session, cassette_library_dir=CASSETTE_LIBRARY_DIR)
         self.common_session = Session()
+        self.common_session.headers = {"Accept-encoding": ""}
         self.betamax_common = Betamax(
             self.common_session, cassette_library_dir=CASSETTE_LIBRARY_DIR)
         self.betamax_placeholders = []
@@ -244,21 +246,90 @@ class TestSnappyApiSender(TestCase):
         # TODO: Make a call that requires a mailbox identifier and assert that
         #       it succeeds.
 
-    def test_note_foo(self):
+    def test_create_note_new_ticket(self):
         """
-        XXX: This is a temporary test method to prototype the use of betamax.
+        Creating a note without a ticket identifier creates a new ticket.
         """
-        mailbox_id = self.get_mailbox_id()
-        snappy = self.get_snappy()
+        # NOTE: This placeholder needs to be set before we create the API
+        #       object betamax only loads its cassette data once upfront in
+        #       playback mode.
         subject_uuid = str(uuid.uuid4())
         self.betamax_placeholders.append({
             "placeholder": "$SUBJECT_UUID$",
             "replace": subject_uuid,
         })
-        resp = snappy.note(
-            mailbox_id, "Test subject %s" % (subject_uuid,),
-            "Are all experiment protocols being followed?", from_addr=[{
+
+        mailbox_id = self.get_mailbox_id()
+        snappy = self.get_snappy()
+
+        ticket_subject = "Test subject %s" % (subject_uuid,)
+        content = "What are the experiment protocols for subject %s?" % (
+            subject_uuid,)
+        ticket_id = snappy.create_note(
+            mailbox_id, ticket_subject, content, from_addr=[{
                 "name": "John Smith",
                 "address": "john.smith@gmail.com",
             }])
-        print resp
+        ticket_notes = snappy.get_ticket_notes(ticket_id)
+
+        # A new ticket will only have one note.
+        self.assertEqual(
+            len(ticket_notes), 1, "Expected exactly 1 note, got %s: %r" % (
+                len(ticket_notes), ticket_notes))
+        [ticket_note] = ticket_notes
+
+        # The note content should match the content we sent.
+        self.assertEqual(ticket_note["content"], content)
+
+    def test_create_note_existing_ticket(self):
+        """
+        Creating a note with a ticket identifier adds a note to the ticket.
+        """
+        # NOTE: This placeholder needs to be set before we create the API
+        #       object betamax only loads its cassette data once upfront in
+        #       playback mode.
+        subject_uuid = str(uuid.uuid4())
+        self.betamax_placeholders.append({
+            "placeholder": "$SUBJECT_UUID$",
+            "replace": subject_uuid,
+        })
+
+        mailbox_id = self.get_mailbox_id()
+        snappy = self.get_snappy()
+
+        # Create ticket
+        ticket_subject = "Test subject %s" % (subject_uuid,)
+        content = "What are the experiment protocols for subject %s?" % (
+            subject_uuid,)
+        ticket_id = snappy.create_note(
+            mailbox_id, ticket_subject, content, from_addr=[{
+                "name": "John Smith",
+                "address": "john.smith@gmail.com",
+            }])
+
+        # Add a note to existing ticket.
+        content_2 = "Do we need more goop for %s?" % (subject_uuid,)
+        ticket_id_2 = snappy.create_note(
+            mailbox_id, ticket_subject, content_2, ticket_id=ticket_id,
+            from_addr=[{
+                "name": "John Smith",
+                "address": "john.smith@gmail.com",
+            }])
+
+        # The ticket identifier should be the same.
+        self.assertEqual(ticket_id, ticket_id_2)
+
+        ticket_notes = snappy.get_ticket_notes(ticket_id)
+        self.assertEqual(
+            len(ticket_notes), 2, "Expected exactly 2 notes, got %s: %r" % (
+                len(ticket_notes), ticket_notes))
+        # NOTE: We have observed that the notes are ordered from newest to
+        #       oldest, but this is not documented. The note identifier appears
+        #       to be an increasing integer, but this is also not documented.
+        #       The timestamp lacks sufficient resolution to order the notes.
+        #       For now, we assume the observed ordering is consistent.
+        [note_2, note_1] = ticket_notes
+
+        # The note content should match the content we sent.
+        self.assertEqual(note_1["content"], content)
+        self.assertEqual(note_2["content"], content_2)

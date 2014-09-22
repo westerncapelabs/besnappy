@@ -1,0 +1,325 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2014-09-22T12:05:10",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/h3r6rybkmdyr2j4q/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":471947,\"account_id\":3249,\"ticket_id\":268240,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411387506,\"updated_at\":\"2014-09-22 12:05:06\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471947,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:05:09 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IjE2b2VwNGFhWW9PVFNCeTZsczNPUDBEeHZqWW5KUm5OYlNGNjdzejZueU09IiwidmFsdWUiOiJKaDVCZHBLRVZ5TUdhbmgzMnhFU1pOdFJrSzN6VmtYMDZYZTN4clFqTk5HNXJ2TlNjbEY5WlNTN25vYU5OTlQ3YWtqU1FzdGp1TFkwc285QVBja1RzZz09IiwibWFjIjoiMWI4ZmE5MTBkZmYxYmI4YmE4Y2NjMjU0MjVhOTlkNTk3YzMxZWI4NDNkYzJhYTE5ODc0M2M0Njc3NmYzNWM0ZiJ9; expires=Mon, 22-Sep-2014 14:05:09 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/h3r6rybkmdyr2j4q/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:06:08",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/yvfdc8s9wuufuodc/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":471956,\"account_id\":3249,\"ticket_id\":268249,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411387562,\"updated_at\":\"2014-09-22 12:06:02\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471956,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:06:07 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IjFSSmdPQkhTZFVuXC81bXAyd3lwcWRxUnNyWStvWXpuUjFBOVFmTUxoRDNVPSIsInZhbHVlIjoiVTNUTnNHNk1TS3FoZUFmT0FEYjBqbzRBT1FZWjdwdHJDUXFjcEdjTHpSalhzTmM0VStkYW01R0wyRTd5amptaEFFalo1c3RhaHErekVGQUNEUTRxUlE9PSIsIm1hYyI6IjkxZDYyY2NiNmZkYjliOWU5YzBiODY5Mjk0ZmRiOTFmNGU5MjY5ZDA1NjVjY2U0OTc0MDc4Nzk5YzEyODM4YjUifQ%3D%3D; expires=Mon, 22-Sep-2014 14:06:07 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/yvfdc8s9wuufuodc/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:10:29",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/xsbcit8sxugpwspx/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":471973,\"account_id\":3249,\"ticket_id\":268263,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411387827,\"updated_at\":\"2014-09-22 12:10:27\",\"content\":\"Do we need more goop for $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471973,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}},{\"id\":471972,\"account_id\":3249,\"ticket_id\":268263,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411387825,\"updated_at\":\"2014-09-22 12:10:25\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471972,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:10:29 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IkFNQjZWMFQzeFNpMk0wTGVVdzJSRDZDUWNcL2F3ak9LeGdNYkR1RzF1c1wvYz0iLCJ2YWx1ZSI6Iit0NW5aYkpCWDJnd2hSR3VVWFNjWWRPQ0ptb3JVN3k5ZnozcGZVWkxpSjRJcFVYd3pHb3EySEFab2JpWUM5R1E3ZjhqblBaMTBYUFwvNFR1MVBJc3RFZz09IiwibWFjIjoiZDc5YmVjZTMxMWFkYzE3Mjc2NWViODU2MTc1NWZhZGY5OTZmMmQ2M2Q5NTMxMDRhMzBiNDUzY2YzNGY3ZGZjZSJ9; expires=Mon, 22-Sep-2014 14:10:29 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/xsbcit8sxugpwspx/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:14:36",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/6wa8udxtnjsbdmds/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":471982,\"account_id\":3249,\"ticket_id\":268267,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411388075,\"updated_at\":\"2014-09-22 12:14:35\",\"content\":\"Do we need more goop for $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471982,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}},{\"id\":471981,\"account_id\":3249,\"ticket_id\":268267,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411388073,\"updated_at\":\"2014-09-22 12:14:33\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471981,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:14:36 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IkJOY3N5Q0F5ZWRMRHlNN2QxMEN0aWFYYnBISEtCXC9YMkI4NEZ5ZkdrZkJRPSIsInZhbHVlIjoiMFhZTVh0c29wSnF4TlBJeWxEWVdvR2VSNHY3YzE4S1JxZ3dlXC8wQkEzS1VaXC9pY2tVeUE4MHdmcXNwTmphMis3OWw1V2ZsVHFNZW9TOE5WRzN0YWpEZz09IiwibWFjIjoiYjQ1MGRiYzUyOGRiY2ExNzM3NGUwNTU2NmJkZTVhYmIzOWQyODE3NGNmNmM1NWU3YjEyMzI0Njc1OWQ3Y2YzYyJ9; expires=Mon, 22-Sep-2014 14:14:36 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/6wa8udxtnjsbdmds/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:19:01",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "gzip, deflate",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/0ajbes8svbgzvocn/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":471995,\"account_id\":3249,\"ticket_id\":268278,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411388340,\"updated_at\":\"2014-09-22 12:19:00\",\"content\":\"Do we need more goop for $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471995,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}},{\"id\":471994,\"account_id\":3249,\"ticket_id\":268278,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411388338,\"updated_at\":\"2014-09-22 12:18:58\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":471994,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:19:01 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IitZRWVcLytSc2M4OGMyVTFUd29FXC9BV0JFWnViTVRiZ1NRK0RObDg1cnV2ND0iLCJ2YWx1ZSI6IkNZQXYxekZVbWlsM3hIYVdWTmlRSmhHeVZPOFVVYjlqUldubWlhQ01JQVJrTnBqNFRTWklRRDFXWE9QaTNVUFB0anJKeDZWeWhCZE5vUkxKQ3JHc3JRPT0iLCJtYWMiOiI0ODc2Y2I5M2E4OWJhOGVhMDg5NjZjNGY0ZjZhZWRkZDFjNzQ3NWYzMWUzYjhjOWQyZGVkNTE1M2IxMTA5MDFkIn0%3D; expires=Mon, 22-Sep-2014 14:19:01 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/0ajbes8svbgzvocn/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:29:32",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept-encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/eahhbaxk1n48dqsd/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":472025,\"account_id\":3249,\"ticket_id\":268295,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411388971,\"updated_at\":\"2014-09-22 12:29:31\",\"content\":\"Do we need more goop for $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":472025,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}},{\"id\":472024,\"account_id\":3249,\"ticket_id\":268295,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411388969,\"updated_at\":\"2014-09-22 12:29:29\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":472024,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:29:32 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IkIrNVdrWWFPRjk1RGdNbGdodTdBdE93SzNlZk1IVVFBYVRIUXZ1cWhZY1k9IiwidmFsdWUiOiJcL3k5R3c0eWZPYlE4XC9DOXFTSHdRM0tHMXl3bnp5UGhDRWF4YjQxdStMMXRTbWV0QVhnbUR3VmdVK2FIRVRHWHBTTDI1bnFLRFU4R3lhYTMrVGhucGRRPT0iLCJtYWMiOiIzNzRmYWExZjk0MmEwMzRhNTI4ZTExMzEzOTY0NTRjMjU0MjE4NjE3ODYwZmM2NTVmMzdmYTQ1MjJmMmVmZmM4In0%3D; expires=Mon, 22-Sep-2014 14:29:32 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/eahhbaxk1n48dqsd/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:46:39",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"id\": \"mj0kzj4lnh7ho7cp\", \"mailbox_id\": 3642, \"from\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"message\": \"Do we need more goop for $SUBJECT_UUID$?\", \"subject\": \"Test subject $SUBJECT_UUID$\"}"
+        },
+        "headers": {
+          "Accept-encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Content-Length": "256",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "POST",
+        "uri": "https://app.besnappy.com/api/v1/note"
+      },
+      "response": {
+        "body": {
+          "encoding": "UTF-8",
+          "string": "mj0kzj4lnh7ho7cp"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "text/html; charset=UTF-8",
+          "date": "Mon, 22 Sep 2014 12:46:38 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IlwvSFFDN0pjeTVmbllXUVBqbnRXWDdGVndmcVZkSnl6NVdnSUtma0dweVZZPSIsInZhbHVlIjoiVFRiYndoQzFpKzBva0M0MEU4YWRMeUFtcDdjclZIZmcxdGJRY2ZWTlwvUytKXC9OOEpreWlGYUtBUEhXOHo2Rm93b243alB3XC9NQzlLbDJhdEtDVGtyOHc9PSIsIm1hYyI6IjNkMTQ2MzE0MzZjYzQwMjY4NDMzNzU1M2Y3NjFkMTk4NWUwM2I3ZDU0MzNiN2RkZGM3ZjA3Y2Q5YjQwNjA5OTUifQ%3D%3D; expires=Mon, 22-Sep-2014 14:46:38 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/note"
+      }
+    },
+    {
+      "recorded_at": "2014-09-22T12:46:39",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept-encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/mj0kzj4lnh7ho7cp/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":472066,\"account_id\":3249,\"ticket_id\":268307,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411389998,\"updated_at\":\"2014-09-22 12:46:38\",\"content\":\"Do we need more goop for $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":472066,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}},{\"id\":472065,\"account_id\":3249,\"ticket_id\":268307,\"facebook_message\":null,\"created_by_staff_id\":null,\"created_by_contact_id\":119399,\"scope\":\"public\",\"created_at\":1411389996,\"updated_at\":\"2014-09-22 12:46:36\",\"content\":\"What are the experiment protocols for subject $SUBJECT_UUID$?\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":472065,\"contact_id\":119399,\"type\":\"from\"},\"address\":\"john.smith@gmail.com\",\"type\":\"from\"}],\"staff_creator\":null,\"contact_creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"},\"attachments\":[],\"creator\":{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"address\":\"john.smith@gmail.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 12:46:39 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6InR2cEJJN2hFNDBpV21aKzVsTDhkV0M1OTVRQU45Y0h2N3NLdndxUk5sZzA9IiwidmFsdWUiOiJnM0Zvb2pYR3JUbWtTRDY4WE1TMTlKaGtjYzBMem1CdEl4ZGc0TlR2NjRDNTZSK1ZwRHpEN3ZJektjMUUzMUxwcGxHRERHSWVmNnF1YXU5S01PN3c3dz09IiwibWFjIjoiOWY1ZDNhOGNmZGRjMWU0NjdlNDMyY2Y0ZGY1YmJlZGZjZjY5NTEyNzQwMWRlNmFhNDYzNzBiZGEzZmQwZTUzOCJ9; expires=Mon, 22-Sep-2014 14:46:39 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/mj0kzj4lnh7ho7cp/notes/"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.4.0"
+}

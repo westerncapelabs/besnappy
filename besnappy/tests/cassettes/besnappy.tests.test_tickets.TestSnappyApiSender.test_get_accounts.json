@@ -1,18 +1,15 @@
 {
   "http_interactions": [
     {
-      "recorded_at": "2014-09-19T14:24:03",
+      "recorded_at": "2014-09-22T12:46:48",
       "request": {
         "body": {
           "encoding": "utf-8",
           "string": ""
         },
         "headers": {
-          "Accept": "*/*",
-          "Accept-Encoding": "gzip, deflate",
+          "Accept-encoding": "",
           "Authorization": "$AUTH_HEADER$",
-          "Connection": "keep-alive",
-          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
           "content-type": "application/json; charset=utf-8"
         },
         "method": "GET",
@@ -27,9 +24,9 @@
           "cache-control": "no-cache",
           "connection": "keep-alive",
           "content-type": "application/json",
-          "date": "Fri, 19 Sep 2014 14:24:02 GMT",
+          "date": "Mon, 22 Sep 2014 12:46:48 GMT",
           "server": "nginx/1.6.0",
-          "set-cookie": "snappy_session=eyJpdiI6Ikd2K2pEcDZIQTFGemFXOUY0NXhDZk9oQ01ZSXlhaHdQYk5RekZyM0ZNTFE9IiwidmFsdWUiOiJZWFFIZ3hyemRSNFJ0MlFUVEpWd283clYrM3pqZXp0RVdKZitJYTh2eVhHRVBFdzlIdGVIUDlVNjZGbUE1YkZsUHZvdUZ0anpJUmtJaG9lSHdZYStXdz09IiwibWFjIjoiMmIwMzAxNWRiNGI5OTc1NjI4Yjk3NzFjYTIxZTIwOTRmZmExZjIyYjRkOWUxYjIyNDIyOTBhOTVkNTA2ZWZiNyJ9; expires=Fri, 19-Sep-2014 16:24:02 GMT; Max-Age=7200; path=/; httponly",
+          "set-cookie": "snappy_session=eyJpdiI6InVkMStqRDQyNUJGSnNuNERDM2ZaXC9xYWp6NjJBWUtRWThDRHVGdE50UVhNPSIsInZhbHVlIjoiMkxuQXZYdjNyMDlzTkg0M0JEOWRReVhXbGlydmJqUUQrZjZRa2dINnR1Z1hjRzdOWnIycVFXSTBsUkNcL1VCMjV2WnhJdENBZldzd200aGdWRXBkTUdRPT0iLCJtYWMiOiI0OThkN2Y5NThiMWRlNzI1OTBhZmVjNTc3MzEyN2Y0ZDJiZDA4MmYxZTMyMzBlZmNiNTJkMzBmYzQ0ODNiNjJjIn0%3D; expires=Mon, 22-Sep-2014 14:46:48 GMT; Max-Age=7200; path=/; httponly",
           "transfer-encoding": "chunked",
           "x-frame-options": "SAMEORIGIN",
           "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"

@@ -54,6 +54,9 @@ class SnappyApiSender(object):
     def get_accounts(self):
         """
         List accounts available.
+
+        :returns:
+            List of account dicts.
         """
         response = self._api_request('GET', 'accounts')
         return json.loads(response.text)
@@ -61,14 +64,23 @@ class SnappyApiSender(object):
     def get_mailboxes(self, account_id):
         """
         List mailboxes in account.
+
+        :param int account_id:
+            Account identifier.
+
+        :returns:
+            List of account dicts.
         """
         response = self._api_request(
             'GET', 'account/%s/mailboxes' % (account_id,))
         return json.loads(response.text)
 
-    def note(self, mailbox_id, subject, message, to_addr=None, from_addr=None,
-             **kwargs):
-        """ Send a note to a mailbox. Needs a to or from.
+    def create_note(self, mailbox_id, subject, message, ticket_id=None,
+                    to_addr=None, from_addr=None, **kwargs):
+        """
+        Create a new note on a new or existing ticket.
+
+        Either ``to_addr`` or ``from_addr`` must be specified.
 
         :param int mailbox_id:
             Mailbox to send to.
@@ -76,19 +88,37 @@ class SnappyApiSender(object):
             Subject of ticket.
         :param str message:
             Message to send.
+        :param ticket_id:
+            Optional ticket identifier. If not provided, a new ticket will be
+            created.
         :param dict to_addr:
-            name and address (optional)
+            name and address (optional) (TODO: document format)
         :param dict from_addr:
-            name and address (optional)
+            name and address (optional) (TODO: document format)
+
+        :returns:
+            Ticket identifier.
         """
         data = {
             "mailbox_id": mailbox_id,
             "subject": subject,
             "message": message,
         }
+        if ticket_id is not None:
+            data["id"] = ticket_id
         if to_addr is not None:
             data["to"] = to_addr
         if from_addr is not None:
             data["from"] = from_addr
         response = self._api_request('POST', 'note', data)
         return response.text
+
+    def get_ticket_notes(self, ticket_id):
+        """
+        Get notes attached to the specified ticket.
+
+        :param ticket_id:
+            Ticket to get notes from.
+        """
+        response = self._api_request('GET', 'ticket/%s/notes/' % (ticket_id,))
+        return json.loads(response.text)
