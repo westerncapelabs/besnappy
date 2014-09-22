@@ -76,7 +76,7 @@ class SnappyApiSender(object):
         return response.json()
 
     def create_note(self, mailbox_id, subject, message, ticket_id=None,
-                    to_addr=None, from_addr=None, **kwargs):
+                    to_addr=None, from_addr=None):
         """
         Create a new note on a new or existing ticket.
 
@@ -119,6 +119,9 @@ class SnappyApiSender(object):
 
         :param ticket_id:
             Ticket to get notes from.
+
+        :returns:
+            List of ticket note dicts.
         """
         response = self._api_request('GET', 'ticket/%s/notes/' % (ticket_id,))
         return response.json()
