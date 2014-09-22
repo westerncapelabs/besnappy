@@ -42,15 +42,18 @@
       }
     },
     {
-      "recorded_at": "2014-09-22T12:46:42",
+      "recorded_at": "2014-09-22T13:05:18",
       "request": {
         "body": {
           "encoding": "utf-8",
           "string": ""
         },
         "headers": {
-          "Accept-encoding": "",
+          "Accept": "*/*",
+          "Accept-Encoding": "",
           "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
           "content-type": "application/json; charset=utf-8"
         },
         "method": "GET",
@@ -65,9 +68,9 @@
           "cache-control": "no-cache",
           "connection": "keep-alive",
           "content-type": "application/json",
-          "date": "Mon, 22 Sep 2014 12:46:41 GMT",
+          "date": "Mon, 22 Sep 2014 13:05:17 GMT",
           "server": "nginx/1.6.0",
-          "set-cookie": "snappy_session=eyJpdiI6InVqMzg1ZDlMWklwYjhoNFhpOXBUZTlCOWlKY1UyK0k2N3pCM3IrSkRVRjg9IiwidmFsdWUiOiJuQ1ByZDVDWDNRSHNiaU1uUGNhZ0J3Q1hCT2pNSlBZRWQrQTB0WkwzUklQS2o4M0Mwc2Voc0pNWThOSk1YOWd5NVZZYktkXC94blZzdzdOM05nRld2THc9PSIsIm1hYyI6ImFmN2I0N2RiODJiZGQ1OGExMjkxNmIwYTgzNDZkM2EwOTFlYjFjODBhYjBjNDU3ZTQwYjBmNzkzYTAzOWRkNDgifQ%3D%3D; expires=Mon, 22-Sep-2014 14:46:41 GMT; Max-Age=7200; path=/; httponly",
+          "set-cookie": "snappy_session=eyJpdiI6InlJZ0Jma1hwNHlKNDRBUjNaOE5ROTZQN3BmR2NYV0VYZnI1bGxBOUVIZGM9IiwidmFsdWUiOiJIVGxmK21JT21zNDlGb29aSUdBWnJJbVFzNmlmcU16d3VYTEZ5eldCVWprQUE0TlNBcWlzZ2lYTEw0TFdENjVJZVFySmM0angwT2s5WXRtRTYyXC9qMlE9PSIsIm1hYyI6ImI1N2E0NDZmMmY2NDAxMTQzZjEzZDgwNjMxNGNmZjhkYjE0ZTY5OWE2OWZhOTgwNGEzMjFjNTA0ZTUxNDVkNTUifQ%3D%3D; expires=Mon, 22-Sep-2014 15:05:17 GMT; Max-Age=7200; path=/; httponly",
           "transfer-encoding": "chunked",
           "x-frame-options": "SAMEORIGIN",
           "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
@@ -80,15 +83,18 @@
       }
     },
     {
-      "recorded_at": "2014-09-22T12:46:50",
+      "recorded_at": "2014-09-22T13:05:27",
       "request": {
         "body": {
           "encoding": "utf-8",
           "string": ""
         },
         "headers": {
-          "Accept-encoding": "",
+          "Accept": "*/*",
+          "Accept-Encoding": "",
           "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
           "content-type": "application/json; charset=utf-8"
         },
         "method": "GET",
@@ -103,9 +109,9 @@
           "cache-control": "no-cache",
           "connection": "keep-alive",
           "content-type": "application/json",
-          "date": "Mon, 22 Sep 2014 12:46:50 GMT",
+          "date": "Mon, 22 Sep 2014 13:05:27 GMT",
           "server": "nginx/1.6.0",
-          "set-cookie": "snappy_session=eyJpdiI6IkhCRXdJU2x6eFlUaVFtVHZ3SFhpNjJhS0ZseXBnSnNrMm9SRTJNTmxkS3c9IiwidmFsdWUiOiJsN2ZvdUxEZFZ3VFZNMmMwQWtsZm5abnRNVDYrQjl5ZjZUR0FBTlBcL3VXK2dSOFNGZlc0RVArT2d4XC9CSEdFVFNHQkM0dm82UDhoS2M5MG05RDZId2lnPT0iLCJtYWMiOiI1ZTAzZGQ0MDM4YjU4MTU2NGU3ZTY2OTY4NGI3MzY1MjI3YWM5MmQ0NzhhMzA5OTA1YjU2ZjI4ZjM4NzkwNzJiIn0%3D; expires=Mon, 22-Sep-2014 14:46:50 GMT; Max-Age=7200; path=/; httponly",
+          "set-cookie": "snappy_session=eyJpdiI6ImRZWm53d0RoUUkyR1ptNngwN09uOGg1bXFzNEVDaWdueEkzRXJoU1o2dVU9IiwidmFsdWUiOiJTa29Na05CRnVrNnFGTmpCVUZpcjE3ZkR4eWt2aUxkNEV3dHFEZGtzSitcLytCRXV3aURtdCtDWXZGTGdZSUpNK3Fmb1B3b2poYnR4ZlRZTWxOVUVCOWc9PSIsIm1hYyI6ImRiYWY3ZjRjN2M1MmFhNjFjOGQ5M2MyYWNiZTFmM2Y4NjFiNjRiOTNkZTFhMmZiYmQ4YzI5ZDhiOGU2OTlkYzgifQ%3D%3D; expires=Mon, 22-Sep-2014 15:05:27 GMT; Max-Age=7200; path=/; httponly",
           "transfer-encoding": "chunked",
           "x-frame-options": "SAMEORIGIN",
           "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"

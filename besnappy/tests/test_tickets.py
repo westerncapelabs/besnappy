@@ -60,14 +60,21 @@ class TestSnappyApiSender(TestCase):
                     " BESNAPPY_TEST_API_KEY is not.")
 
         self.no_http_session = TestSession()
+
         self.betamax_session = Session()
-        self.betamax_session.headers = {"Accept-encoding": ""}
+        # We reset the Accept-Encoding header to avoid storing (opaque) gzip
+        # response data.
+        self.betamax_session.headers["Accept-Encoding"] = ""
         self.betamax = Betamax(
             self.betamax_session, cassette_library_dir=CASSETTE_LIBRARY_DIR)
+
         self.common_session = Session()
-        self.common_session.headers = {"Accept-encoding": ""}
+        # We reset the Accept-Encoding header to avoid storing (opaque) gzip
+        # response data.
+        self.common_session.headers["Accept-Encoding"] = ""
         self.betamax_common = Betamax(
             self.common_session, cassette_library_dir=CASSETTE_LIBRARY_DIR)
+
         self.betamax_placeholders = []
         self.common_snappy = self._get_common_snappy()
 
