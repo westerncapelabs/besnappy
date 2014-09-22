@@ -59,7 +59,7 @@ class SnappyApiSender(object):
             List of account dicts.
         """
         response = self._api_request('GET', 'accounts')
-        return json.loads(response.text)
+        return response.json()
 
     def get_mailboxes(self, account_id):
         """
@@ -73,7 +73,7 @@ class SnappyApiSender(object):
         """
         response = self._api_request(
             'GET', 'account/%s/mailboxes' % (account_id,))
-        return json.loads(response.text)
+        return response.json()
 
     def create_note(self, mailbox_id, subject, message, ticket_id=None,
                     to_addr=None, from_addr=None, **kwargs):
@@ -121,4 +121,4 @@ class SnappyApiSender(object):
             Ticket to get notes from.
         """
         response = self._api_request('GET', 'ticket/%s/notes/' % (ticket_id,))
-        return json.loads(response.text)
+        return response.json()
