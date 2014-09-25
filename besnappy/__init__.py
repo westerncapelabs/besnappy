@@ -2,8 +2,8 @@
 
 __version__ = "0.0.1a"
 
-from .ticket import SnappyApiSender, LoggingSender
+from .tickets import SnappyApiSender
 
 __all__ = [
-    'SnappyApiSender', 'LoggingSender',
+    'SnappyApiSender',
 ]

@@ -1,0 +1,46 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2014-09-22T13:05:29",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/account/3249/mailboxes"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":3642,\"account_id\":3249,\"type\":\"email\",\"address\":\"hello@wcldemo.besnappy.com\",\"display\":\"Western Cape Labs (Test)\",\"auto_responding\":null,\"auto_response\":null,\"active\":1,\"created_at\":\"2014-09-16 13:49:36\",\"updated_at\":\"2014-09-16 13:49:36\",\"custom_address\":null,\"theme\":\"snappy\",\"signature\":null,\"language\":\"en\",\"smtp_enabled\":0,\"smtp\":null,\"local_part\":\"hello\"}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Mon, 22 Sep 2014 13:05:29 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6InRiOUc0UWJTb2lRTGhsNWNhekI5T0NvZk9iYjUzR2FUdXU4emhwREFNRWM9IiwidmFsdWUiOiJxRmRnUXUzbllwSnFHSjNCbmJpa1hqT0FiQnVMRDF3ZHJDWlg2RENkNitydXVxRHJWVkl6bWU2aWJPaUNNM0h4VW9YQXRJbFRSNlo1eGtCZjdtb2RQZz09IiwibWFjIjoiN2VhM2MxMmEzMjE1M2VhNGQxOTU1YTQ0NzMwMzcwNjFmNWZjZGJiYjRjMTAyOTIwYzcyZmI5YTdmZmJhYjk0MiJ9; expires=Mon, 22-Sep-2014 15:05:29 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/account/3249/mailboxes"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.4.0"
+}

@@ -1,7 +1,8 @@
 """ Utilities for sending to Snappy HTTP API.
 """
 import json
-import requests
+from requests import Session
+
 
 class SnappyApiSender(object):
     """
@@ -27,7 +28,7 @@ class SnappyApiSender(object):
             api_url = "https://app.besnappy.com/api/v1"
         self.api_url = api_url
         if session is None:
-             session = requests.Session()
+            session = Session()
         self.session = session
 
     def _api_request(self, method, endpoint, py_data=None):
@@ -36,18 +37,50 @@ class SnappyApiSender(object):
         auth = (self.api_key, "x")
         if method is "POST":
             data = json.dumps(py_data)
-            r = requests.post(url, auth=auth, data=data, headers=headers, verify=False)
+            r = self.session.post(
+                url, auth=auth, data=data, headers=headers, verify=False)
         elif method is "GET":
             if py_data is not None:
-                r = self.session.get(url, auth=auth, params=data, headers=headers, verify=False)
+                r = self.session.get(
+                    url, auth=auth, params=data, headers=headers, verify=False)
             else:
-                r = self.session.get(url, auth=auth, headers=headers, verify=False)
+                r = self.session.get(
+                    url, auth=auth, headers=headers, verify=False)
         r.raise_for_status()
-        # return whole response because some calls are just single text response not json
+        # return whole response because some calls are just single text
+        # response not json
         return r
 
-    def note(self, mailbox_id, subject, message, to_addr=None, from_addr=None, **kwargs):
-        """ Send a note to a mailbox. Needs a to or from.
+    def get_accounts(self):
+        """
+        List accounts available.
+
+        :returns:
+            List of account dicts.
+        """
+        response = self._api_request('GET', 'accounts')
+        return response.json()
+
+    def get_mailboxes(self, account_id):
+        """
+        List mailboxes in account.
+
+        :param int account_id:
+            Account identifier.
+
+        :returns:
+            List of account dicts.
+        """
+        response = self._api_request(
+            'GET', 'account/%s/mailboxes' % (account_id,))
+        return response.json()
+
+    def create_note(self, mailbox_id, subject, message, ticket_id=None,
+                    to_addr=None, from_addr=None):
+        """
+        Create a new note on a new or existing ticket.
+
+        Either ``to_addr`` or ``from_addr`` must be specified.
 
         :param int mailbox_id:
             Mailbox to send to.
@@ -55,19 +88,40 @@ class SnappyApiSender(object):
             Subject of ticket.
         :param str message:
             Message to send.
+        :param ticket_id:
+            Optional ticket identifier. If not provided, a new ticket will be
+            created.
         :param dict to_addr:
-            name and address (optional)
+            name and address (optional) (TODO: document format)
         :param dict from_addr:
-            name and address (optional)
+            name and address (optional) (TODO: document format)
+
+        :returns:
+            Ticket identifier.
         """
         data = {
             "mailbox_id": mailbox_id,
             "subject": subject,
             "message": message,
         }
+        if ticket_id is not None:
+            data["id"] = ticket_id
         if to_addr is not None:
             data["to"] = to_addr
         if from_addr is not None:
             data["from"] = from_addr
         response = self._api_request('POST', 'note', data)
         return response.text
+
+    def get_ticket_notes(self, ticket_id):
+        """
+        Get notes attached to the specified ticket.
+
+        :param ticket_id:
+            Ticket to get notes from.
+
+        :returns:
+            List of ticket note dicts.
+        """
+        response = self._api_request('GET', 'ticket/%s/notes/' % (ticket_id,))
+        return response.json()
