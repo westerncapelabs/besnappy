@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="besnappy",
-    version="0.1.0",
+    version="0.1.0a",
     url='http://github.com/westerncapelabs/besnappy',
     license='BSD',
     description="An unofficial client library for the BeSnappy HTTP API.",
