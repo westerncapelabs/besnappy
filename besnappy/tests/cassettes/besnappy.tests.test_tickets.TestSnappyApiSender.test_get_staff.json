@@ -1,0 +1,46 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2014-09-25T11:58:57",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/account/3249/staff"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"pivot\":{\"account_id\":3249,\"staff_id\":58,\"username\":\"mike\",\"owner\":1,\"admin\":1,\"last_wall_visit\":null,\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"address\":\"mike@westerncapelabs.com\",\"username\":\"mike\"},{\"id\":3696,\"email\":\"jeremy@praekelt.com\",\"sms_number\":null,\"first_name\":\"Jeremy\",\"last_name\":\"Thurgood\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2014-09-17 13:02:56\",\"updated_at\":\"2014-09-25 06:40:44\",\"signature\":null,\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":0,\"news_read_at\":\"2014-09-25 06:40:44\",\"apple_device_token\":null,\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":null,\"verification_token\":null,\"verified\":null,\"pivot\":{\"account_id\":3249,\"staff_id\":3696,\"username\":\"jeremy\",\"owner\":0,\"admin\":0,\"last_wall_visit\":\"2014-09-18 10:41:15\",\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"address\":\"jeremy@praekelt.com\",\"username\":\"jeremy\"}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Thu, 25 Sep 2014 11:58:57 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IklzM000VEVPQ2RBQ0I5dzU3XC9ndjEyTlJqMmhLSThpNEdQbDY1dEtRcEkwPSIsInZhbHVlIjoiajlpVjh6cmFTbGZmNkNNa2wyVjNzSlBiWU9zMGRLVUlxd2ExV3p4bkthZXZYT2FvM0F2cnEwVUhVT0dZeDVsaXhmSDRoRm5Bc3ZTNnpKTDhpclAydWc9PSIsIm1hYyI6IjExMDUzNzBjZGZmODY2OTFkYzJhZDQ4MTRkNTBlN2Y2MWIwM2JjMzRhM2ViZDk5NGEzYWIyODQ2MTkwODQ3NjYifQ%3D%3D; expires=Thu, 25-Sep-2014 13:58:57 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/account/3249/staff"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.4.0"
+}

@@ -42,7 +42,7 @@
       }
     },
     {
-      "recorded_at": "2014-09-22T13:05:18",
+      "recorded_at": "2014-09-25T12:09:10",
       "request": {
         "body": {
           "encoding": "utf-8",
@@ -68,9 +68,9 @@
           "cache-control": "no-cache",
           "connection": "keep-alive",
           "content-type": "application/json",
-          "date": "Mon, 22 Sep 2014 13:05:17 GMT",
+          "date": "Thu, 25 Sep 2014 12:09:10 GMT",
           "server": "nginx/1.6.0",
-          "set-cookie": "snappy_session=eyJpdiI6InlJZ0Jma1hwNHlKNDRBUjNaOE5ROTZQN3BmR2NYV0VYZnI1bGxBOUVIZGM9IiwidmFsdWUiOiJIVGxmK21JT21zNDlGb29aSUdBWnJJbVFzNmlmcU16d3VYTEZ5eldCVWprQUE0TlNBcWlzZ2lYTEw0TFdENjVJZVFySmM0angwT2s5WXRtRTYyXC9qMlE9PSIsIm1hYyI6ImI1N2E0NDZmMmY2NDAxMTQzZjEzZDgwNjMxNGNmZjhkYjE0ZTY5OWE2OWZhOTgwNGEzMjFjNTA0ZTUxNDVkNTUifQ%3D%3D; expires=Mon, 22-Sep-2014 15:05:17 GMT; Max-Age=7200; path=/; httponly",
+          "set-cookie": "snappy_session=eyJpdiI6IitaNGdhcUJ2T21lYjNKc25CXC9jMWptbVFcL1wvc3FmSlwvYnJIdVNVK2RITzNBPSIsInZhbHVlIjoiVXhMUUoyWHhaYm1GNjNJSjlsOXFuY1BWK2x4NnhBZ3JCNE9oeStBcks2ME5QSVUwU0tLQVY3cGFYWXQ2WXZHY21QdkQxVTEwT1QxejlmdlBSYmZIakE9PSIsIm1hYyI6IjM3MjU4NWYxYWNlYjcwZTgyNWQ5Zjk2OTI3YmU5YmVmM2YzMTEwM2Y0Nzg2NmYwY2VmNjk2OGYzNjdjZWJkNjIifQ%3D%3D; expires=Thu, 25-Sep-2014 14:09:10 GMT; Max-Age=7200; path=/; httponly",
           "transfer-encoding": "chunked",
           "x-frame-options": "SAMEORIGIN",
           "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
@@ -83,7 +83,7 @@
       }
     },
     {
-      "recorded_at": "2014-09-22T13:05:27",
+      "recorded_at": "2014-09-25T12:09:11",
       "request": {
         "body": {
           "encoding": "utf-8",
@@ -109,9 +109,9 @@
           "cache-control": "no-cache",
           "connection": "keep-alive",
           "content-type": "application/json",
-          "date": "Mon, 22 Sep 2014 13:05:27 GMT",
+          "date": "Thu, 25 Sep 2014 12:09:11 GMT",
           "server": "nginx/1.6.0",
-          "set-cookie": "snappy_session=eyJpdiI6ImRZWm53d0RoUUkyR1ptNngwN09uOGg1bXFzNEVDaWdueEkzRXJoU1o2dVU9IiwidmFsdWUiOiJTa29Na05CRnVrNnFGTmpCVUZpcjE3ZkR4eWt2aUxkNEV3dHFEZGtzSitcLytCRXV3aURtdCtDWXZGTGdZSUpNK3Fmb1B3b2poYnR4ZlRZTWxOVUVCOWc9PSIsIm1hYyI6ImRiYWY3ZjRjN2M1MmFhNjFjOGQ5M2MyYWNiZTFmM2Y4NjFiNjRiOTNkZTFhMmZiYmQ4YzI5ZDhiOGU2OTlkYzgifQ%3D%3D; expires=Mon, 22-Sep-2014 15:05:27 GMT; Max-Age=7200; path=/; httponly",
+          "set-cookie": "snappy_session=eyJpdiI6ImlxTHlGcndOQXlXWmFQVXNnOEZ4Z2wrc1RUVWRxUW5Ya0xrRHVwWDlNWnc9IiwidmFsdWUiOiJtRWRFVWNnSEh6SitGa2xYM3FQTHcyWkduaW1cL2dKRzlRb0sya1ZzYnJ6Z29LT0VENWpkVStsM0o3VmRiYUFNYkJrNE1hZStrcm1VR2lxZ3NpY1d5OFE9PSIsIm1hYyI6IjJiNmYyMDI0MDk2M2FiZDY4ZTM5ZjExZjA3NjAyMjFiYzRiNmU0Y2IzNDViOGQ0NmJhMmUzZWZjOTljNTUzYzAifQ%3D%3D; expires=Thu, 25-Sep-2014 14:09:11 GMT; Max-Age=7200; path=/; httponly",
           "transfer-encoding": "chunked",
           "x-frame-options": "SAMEORIGIN",
           "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
@@ -121,6 +121,47 @@
           "message": "OK"
         },
         "url": "https://app.besnappy.com/api/v1/accounts"
+      }
+    },
+    {
+      "recorded_at": "2014-09-25T12:09:11",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/account/3249/staff"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"pivot\":{\"account_id\":3249,\"staff_id\":58,\"username\":\"mike\",\"owner\":1,\"admin\":1,\"last_wall_visit\":null,\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"address\":\"mike@westerncapelabs.com\",\"username\":\"mike\"},{\"id\":3696,\"email\":\"jeremy@praekelt.com\",\"sms_number\":null,\"first_name\":\"Jeremy\",\"last_name\":\"Thurgood\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2014-09-17 13:02:56\",\"updated_at\":\"2014-09-25 06:40:44\",\"signature\":null,\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":0,\"news_read_at\":\"2014-09-25 06:40:44\",\"apple_device_token\":null,\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":null,\"verification_token\":null,\"verified\":null,\"pivot\":{\"account_id\":3249,\"staff_id\":3696,\"username\":\"jeremy\",\"owner\":0,\"admin\":0,\"last_wall_visit\":\"2014-09-18 10:41:15\",\"notify\":1,\"notify_new\":1,\"mobile_notify\":1,\"mobile_notify_new\":1},\"address\":\"jeremy@praekelt.com\",\"username\":\"jeremy\"}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Thu, 25 Sep 2014 12:09:11 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IjZtMEVkd2F4ZTVBXC81WkptazVHQlJyM1A5Z3o3OWhuWDQzbUxvMGdLYzJvPSIsInZhbHVlIjoiaUtFMDlOWlgzeVJ5c0hPb3k2aDIwVWZ2UmhwQVg4cjVPWHhGdDVtM0lLUVAwUVhCVkNobHZVVE92UDVmbGU0RkdDMlhTWnVSdjlEQURRVWNrZnBkamc9PSIsIm1hYyI6IjNmMjk0ODBhNDAxMDhhYmE1MDM3YjgzYjNlNTU2ZTJmYTU4ODk2ZDE4Y2I4YmJlMjM5NTU0Y2E5YzMxMDIwOTAifQ%3D%3D; expires=Thu, 25-Sep-2014 14:09:11 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/account/3249/staff"
       }
     }
   ],

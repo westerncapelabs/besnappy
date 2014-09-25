@@ -46,6 +46,16 @@ def basic_auth_header_value(api_key):
     return r.auth_header_value
 
 
+def strip_note_content(content):
+    """
+    Sometimes note content is returned wrapped in HTML.
+    """
+    content = content.strip()
+    if content.startswith("<p>") and content.endswith("</p>"):
+        content = content[3:-4]
+    return content
+
+
 class TestSnappyApiSender(TestCase):
     def setUp(self):
         self.api_key = "dummy_key"
@@ -184,6 +194,20 @@ class TestSnappyApiSender(TestCase):
         mailboxes = self.common_snappy.get_mailboxes(account_id)
         return mailboxes[0]["id"]
 
+    def get_staff_id(self):
+        """
+        Get a staff_id for use in further tests.
+
+        This uses the common betamax instead of the test-specific one.
+
+        Because we don't have very much control over the account we're testing
+        against, we always choose the first staff entry in first account in the
+        list.
+        """
+        account_id = self.get_account_id()
+        staff = self.common_snappy.get_staff(account_id)
+        return staff[0]["id"]
+
     def assert_looks_like_account_dict(self, obj):
         """
         Assertion fails if the provided object doesn't look sufficiently like
@@ -217,6 +241,24 @@ class TestSnappyApiSender(TestCase):
             missing_fields, set(), "Dict missing mailbox fields: %s" % (
                 ", ".join(sorted(missing_fields)),))
         self.assertEqual(obj["account_id"], account_id)
+
+    def assert_looks_like_staff_dict(self, obj):
+        """
+        Assertion fails if the provided object doesn't look sufficiently like
+        a staff dict.
+
+        TODO: Determine if this is good enough.
+        """
+        self.assertTrue(isinstance(obj, dict), "Not a dict: %r" % (obj,))
+        staff_fields = set([
+            "id", "email", "sms_number", "first_name", "last_name", "photo",
+            "culture", "notify", "created_at", "updated_at", "signature",
+            "tour_played", "timezone", "notify_new", "news_read_at",
+            "username"])
+        missing_fields = staff_fields - set(obj.keys())
+        self.assertEqual(
+            missing_fields, set(), "Dict missing staff fields: %s" % (
+                ", ".join(sorted(missing_fields)),))
 
     def test_get_accounts(self):
         """
@@ -253,6 +295,24 @@ class TestSnappyApiSender(TestCase):
         # TODO: Make a call that requires a mailbox identifier and assert that
         #       it succeeds.
 
+    def test_get_staff(self):
+        """
+        ``.get_staff()`` returns a list of staffes for an account.
+
+        Because we don't have very much control over the account we're testing
+        against, we can only assert on the general structure. We always choose
+        the first account in the list.
+        """
+        account_id = self.get_account_id()
+        snappy = self.get_snappy()
+        staff = snappy.get_staff(account_id)
+        self.assertTrue(isinstance(staff, list))
+        self.assertTrue(len(staff) >= 1)
+        staff_member = staff[0]
+        self.assert_looks_like_staff_dict(staff_member)
+        # TODO: Make a call that requires a staff identifier and assert that
+        #       it succeeds.
+
     def test_create_note_new_ticket(self):
         """
         Creating a note without a ticket identifier creates a new ticket.
@@ -286,7 +346,44 @@ class TestSnappyApiSender(TestCase):
         [ticket_note] = ticket_notes
 
         # The note content should match the content we sent.
-        self.assertEqual(ticket_note["content"], content)
+        self.assertEqual(strip_note_content(ticket_note["content"]), content)
+
+    def test_create_note_new_private_from_staff(self):
+        """
+        Creating a note without a ticket identifier creates a new ticket.
+        """
+        # NOTE: This placeholder needs to be set before we create the API
+        #       object betamax only loads its cassette data once upfront in
+        #       playback mode.
+        subject_uuid = str(uuid.uuid4())
+        self.betamax_placeholders.append({
+            "placeholder": "$SUBJECT_UUID$",
+            "replace": subject_uuid,
+        })
+
+        mailbox_id = self.get_mailbox_id()
+        staff_id = self.get_staff_id()
+        snappy = self.get_snappy()
+
+        ticket_subject = "Private subject %s" % (subject_uuid,)
+        content = "Has %s accepted the privacy policy?" % (subject_uuid,)
+        addr = {
+            "name": "John Smith",
+            "address": "john.smith@gmail.com",
+        }
+        ticket_id = snappy.create_note(
+            mailbox_id, ticket_subject, content, to_addr=[addr],
+            staff_id=staff_id, scope="private")
+        ticket_notes = snappy.get_ticket_notes(ticket_id)
+
+        # A new ticket will only have one note.
+        self.assertEqual(
+            len(ticket_notes), 1, "Expected exactly 1 note, got %s: %r" % (
+                len(ticket_notes), ticket_notes))
+        [ticket_note] = ticket_notes
+
+        # The note content should match the content we sent.
+        self.assertEqual(strip_note_content(ticket_note["content"]), content)
 
     def test_create_note_existing_ticket(self):
         """
@@ -338,5 +435,5 @@ class TestSnappyApiSender(TestCase):
         [note_2, note_1] = ticket_notes
 
         # The note content should match the content we sent.
-        self.assertEqual(note_1["content"], content)
-        self.assertEqual(note_2["content"], content_2)
+        self.assertEqual(strip_note_content(note_1["content"]), content)
+        self.assertEqual(strip_note_content(note_2["content"]), content_2)

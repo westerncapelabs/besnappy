@@ -1,0 +1,211 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2014-09-25T11:58:54",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/6z1gbzmavzjsj6w7/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":479670,\"account_id\":3249,\"ticket_id\":271897,\"facebook_message\":null,\"created_by_staff_id\":58,\"created_by_contact_id\":null,\"scope\":\"private\",\"created_at\":1411646332,\"updated_at\":\"2014-09-25 11:58:52\",\"content\":\"<p>Has $SUBJECT_UUID$ accepted the privacy policy?<\\/p>\\n\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":479670,\"contact_id\":119399,\"type\":\"to\"},\"address\":\"john.smith@gmail.com\",\"type\":\"to\"}],\"staff_creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"},\"contact_creator\":null,\"attachments\":[],\"creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Thu, 25 Sep 2014 11:58:54 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IlwvU3dLYjA3eENqc1JjdHQ5S29rVndGNEhDRjZ1TGVaWkhMamVvWEY2R1M0PSIsInZhbHVlIjoiQWZnc2ZabVEyUFpMbUJYV3hkR2sxcXFYNlJzN0hGeUtXUkVDdk5JZGU4THc0a2RUQmJEVGg1YXhiMkZHOVlpTlwvRjJEY0NVMW5CeHNlZjJ6MG5PbkVnPT0iLCJtYWMiOiIwNmNlYzAzYzQ1NTE0YmIzYTlhZWFjZWYxYTFmOGYzYjViY2Y5NmI1M2ZiZWU5MTY1YmU0ZDNjNWExOTUyYWZjIn0%3D; expires=Thu, 25-Sep-2014 13:58:54 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/6z1gbzmavzjsj6w7/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-25T12:03:00",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/wfy4xvesfqjzybhg/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":479679,\"account_id\":3249,\"ticket_id\":271903,\"facebook_message\":null,\"created_by_staff_id\":58,\"created_by_contact_id\":null,\"scope\":\"private\",\"created_at\":1411646578,\"updated_at\":\"2014-09-25 12:02:58\",\"content\":\"<p>Has $SUBJECT_UUID$ accepted the privacy policy?<\\/p>\\n\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":479679,\"contact_id\":119399,\"type\":\"to\"},\"address\":\"john.smith@gmail.com\",\"type\":\"to\"}],\"staff_creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"},\"contact_creator\":null,\"attachments\":[],\"creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Thu, 25 Sep 2014 12:03:00 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IndHVUI5T3duRXl4QWFxUHZ1M2FBS3VsdTZBXC81cjNsYUd2Tk9yVFlBOTRVPSIsInZhbHVlIjoidENrQXpGaFNrNE9UT1ozcG80bTk0cmNDdkI3NytUalRsVElZV29XOWphT3hEUkhvVmJVbFhUamtlSGNzVFR5ZExTbk42bjFhZXhPR2k4ZWVKdDZVMXc9PSIsIm1hYyI6IjhlY2Y2NjFhYWVmZDlmMmM1MzY1NTgxNzgwOWMwYWQ0OTQzZDgyMWI2OWFjNWJiZmY3MTI1MjA1MDU3NDJhOWUifQ%3D%3D; expires=Thu, 25-Sep-2014 14:03:00 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/wfy4xvesfqjzybhg/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-25T12:03:30",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/zwx9qf2swbdyd3je/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":479686,\"account_id\":3249,\"ticket_id\":271906,\"facebook_message\":null,\"created_by_staff_id\":58,\"created_by_contact_id\":null,\"scope\":\"private\",\"created_at\":1411646608,\"updated_at\":\"2014-09-25 12:03:28\",\"content\":\"<p>Has $SUBJECT_UUID$ accepted the privacy policy?<\\/p>\\n\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":479686,\"contact_id\":119399,\"type\":\"to\"},\"address\":\"john.smith@gmail.com\",\"type\":\"to\"}],\"staff_creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"},\"contact_creator\":null,\"attachments\":[],\"creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Thu, 25 Sep 2014 12:03:30 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IkJJd0c2c1dQb2FzUUMwUXE3U0xVVGpBakhGRGc3N1dNOWhwYTU3WWpYZk09IiwidmFsdWUiOiJHYVA5akNJYjNXZTk5dENaaDBHY1M4eTJVT2NCRmF2RTFlWVRsVFBrYWlyMHFwa01ackgxMER3XC91blY0cnh2N1FlV3pENkNBNGpBK0JOT1VUcjA4Z3c9PSIsIm1hYyI6IjgyYjA2YThiZGM2OGJjZjMzMTc5MTA4NjU1N2YwOWY4NTE0MjFhNWQ1ODEwNWQ0Zjk4OGYyZjJkYjFlMmE5ZGMifQ%3D%3D; expires=Thu, 25-Sep-2014 14:03:30 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/zwx9qf2swbdyd3je/notes/"
+      }
+    },
+    {
+      "recorded_at": "2014-09-25T12:09:14",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": "{\"staff_id\": 58, \"to\": [{\"name\": \"John Smith\", \"address\": \"john.smith@gmail.com\"}], \"scope\": \"private\", \"mailbox_id\": 3642, \"message\": \"Has $SUBJECT_UUID$ accepted the privacy policy?\", \"subject\": \"Private subject $SUBJECT_UUID$\"}"
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "Content-Length": "274",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "POST",
+        "uri": "https://app.besnappy.com/api/v1/note"
+      },
+      "response": {
+        "body": {
+          "encoding": "UTF-8",
+          "string": "eqo4xvqgxoryoch7"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "text/html; charset=UTF-8",
+          "date": "Thu, 25 Sep 2014 12:09:14 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6IjZrZEZuamJ4eWZjM3dGZVBCMURac0VTSWdvZ3ZTczI2YXQ4RE5IWXNjUnM9IiwidmFsdWUiOiJsYmxnaGFvSTVtNmpkOGVkQXVtNitmenF5amxDWlFEdXFxZWtZNUlUMjZwcFQyUm94UFRvMTlEcnFIV2JnYlpOdzl3ek02UzdMdzVZSG1XZlYzRFladz09IiwibWFjIjoiMGY1OTc3MjVhMTc3NGM4N2Q0ZWZjZTVhYmY0YzQwMDM3NGFmNTBlOWY2ZWQ0YTBmYzk1MzE4NzJkNjliNWEyMiJ9; expires=Thu, 25-Sep-2014 14:09:14 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/note"
+      }
+    },
+    {
+      "recorded_at": "2014-09-25T12:09:14",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Accept-Encoding": "",
+          "Authorization": "$AUTH_HEADER$",
+          "Connection": "keep-alive",
+          "User-Agent": "python-requests/2.4.1 CPython/2.7.2 Darwin/12.5.0",
+          "content-type": "application/json; charset=utf-8"
+        },
+        "method": "GET",
+        "uri": "https://app.besnappy.com/api/v1/ticket/eqo4xvqgxoryoch7/notes/"
+      },
+      "response": {
+        "body": {
+          "encoding": null,
+          "string": "[{\"id\":479699,\"account_id\":3249,\"ticket_id\":271915,\"facebook_message\":null,\"created_by_staff_id\":58,\"created_by_contact_id\":null,\"scope\":\"private\",\"created_at\":1411646953,\"updated_at\":\"2014-09-25 12:09:13\",\"content\":\"<p>Has $SUBJECT_UUID$ accepted the privacy policy?<\\/p>\\n\",\"system\":0,\"using_html\":0,\"raw_headers\":null,\"contacts\":[{\"id\":119399,\"account_id\":3249,\"first_name\":\"John\",\"last_name\":\"Smith\",\"value\":\"john.smith@gmail.com\",\"provider\":\"email\",\"created_at\":\"2014-09-18 10:27:27\",\"updated_at\":\"2014-09-18 10:27:27\",\"pivot\":{\"note_id\":479699,\"contact_id\":119399,\"type\":\"to\"},\"address\":\"john.smith@gmail.com\",\"type\":\"to\"}],\"staff_creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"},\"contact_creator\":null,\"attachments\":[],\"creator\":{\"id\":58,\"email\":\"mike@westerncapelabs.com\",\"sms_number\":\"0027841234567\",\"first_name\":\"Mike\",\"last_name\":\"Jones\",\"photo\":null,\"culture\":\"en\",\"notify\":1,\"created_at\":\"2012-12-10 14:25:16\",\"updated_at\":\"2014-09-25 06:57:45\",\"signature\":\"\",\"tour_played\":1,\"timezone\":\"Africa\\/Johannesburg\",\"notify_new\":1,\"news_read_at\":\"2014-09-25 06:57:45\",\"apple_device_token\":\"XXXXX\",\"remember_token\":\"XXXXX\",\"mobile_notify\":1,\"mobile_notify_new\":1,\"mobile_viewing_account\":3088,\"verification_token\":\"XXXXX\",\"verified\":true,\"address\":\"mike@westerncapelabs.com\"}}]"
+        },
+        "headers": {
+          "cache-control": "no-cache",
+          "connection": "keep-alive",
+          "content-type": "application/json",
+          "date": "Thu, 25 Sep 2014 12:09:14 GMT",
+          "server": "nginx/1.6.0",
+          "set-cookie": "snappy_session=eyJpdiI6Ilwvd3Zlb29UdWZmZHpaT1BtNTU0M1hMV2ZtRmZkUFNYSDV6dHRFYTlmeXVvPSIsInZhbHVlIjoid0NmcTdjNlNMZXNqajhlQkhIN3dFZ0VcL1wva295QU1EcmpYSVlUTE5tbmFPS0UrVnp2NXJLcXJmUXhPNmtCeStORm12ZFNxNzdYcUZlQXdTcWZrV2hSUT09IiwibWFjIjoiZGJhMWRkN2JkNWFlMzc3YzU2MGI2NTAxZWVkZDIyOTBiMWFmZjllNTdkYjFiNWE0ZjRmMTNmYTg3NGJjOGE3MCJ9; expires=Thu, 25-Sep-2014 14:09:14 GMT; Max-Age=7200; path=/; httponly",
+          "transfer-encoding": "chunked",
+          "x-frame-options": "SAMEORIGIN",
+          "x-powered-by": "PHP/5.6.0-1+deb.sury.org~trusty+1"
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://app.besnappy.com/api/v1/ticket/eqo4xvqgxoryoch7/notes/"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.4.0"
+}

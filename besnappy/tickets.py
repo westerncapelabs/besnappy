@@ -69,18 +69,33 @@ class SnappyApiSender(object):
             Account identifier.
 
         :returns:
-            List of account dicts.
+            List of mailbox dicts.
         """
         response = self._api_request(
             'GET', 'account/%s/mailboxes' % (account_id,))
         return response.json()
 
+    def get_staff(self, account_id):
+        """
+        List staff in account.
+
+        :param int account_id:
+            Account identifier.
+
+        :returns:
+            List of staff dicts.
+        """
+        response = self._api_request(
+            'GET', 'account/%s/staff' % (account_id,))
+        return response.json()
+
     def create_note(self, mailbox_id, subject, message, ticket_id=None,
-                    to_addr=None, from_addr=None):
+                    to_addr=None, from_addr=None, staff_id=None, scope=None):
         """
         Create a new note on a new or existing ticket.
 
-        Either ``to_addr`` or ``from_addr`` must be specified.
+        Either ``from_addr`` or both ``to_addr`` and ``staff_id`` must be
+        specified.
 
         :param int mailbox_id:
             Mailbox to send to.
@@ -95,6 +110,10 @@ class SnappyApiSender(object):
             name and address (optional) (TODO: document format)
         :param dict from_addr:
             name and address (optional) (TODO: document format)
+        :param int staff_id:
+            Staff identifier
+        :param str scope:
+            Set to `"private"` for a private note. (TODO: document othe values)
 
         :returns:
             Ticket identifier.
@@ -110,6 +129,10 @@ class SnappyApiSender(object):
             data["to"] = to_addr
         if from_addr is not None:
             data["from"] = from_addr
+        if staff_id is not None:
+            data["staff_id"] = staff_id
+        if scope is not None:
+            data["scope"] = scope
         response = self._api_request('POST', 'note', data)
         return response.text
 
